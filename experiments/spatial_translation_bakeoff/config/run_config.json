@@ -31,7 +31,7 @@
       "determinism_note": "No determinism guarantee. Omit unsupported temperature/seed rather than silently retry with changed settings."
     },
     "ollama": {
-      "model": "gemma4:e4b",
+      "model": "qwen2.5:3b-instruct",
       "host": "http://localhost:11434",
       "api": "Ollama local /api/chat, format=JSON schema (server-enforced)",
       "temperature": 0,
