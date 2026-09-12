@@ -10,12 +10,9 @@ for those records, never silently patched, reordered or invented.
 """
 import argparse
 import json
-from collections import Counter
 from pathlib import Path
-from .common import ROOT, EXPERIMENT, BLIND_FIELDS, dumps, load_blind, read_csv, write_text_once, write_csv_once
+from .common import EXPERIMENT, BLIND_FIELDS, dumps, load_blind, write_text_once, write_csv_once
 from .schema import validate_alignment
-from .validate import screen
-from .evaluate import join_audit, EXPECTED_SUBSETS
 
 BATCH_DIR = EXPERIMENT / 'chatgpt_manual/batches'
 OUTPUT_DIR = EXPERIMENT / 'chatgpt_manual/outputs'
@@ -118,67 +115,15 @@ def _rewrite(path, rows):
     write_csv_once(path, rows)
 
 
-def validate_and_report():
-    """Run the same conservative structural screen every automated arm gets, over the
-    ingested chatgpt_manual candidates. Not gold, not auto-approval: identical caveats
-    to the harness's own validate.py, just applied to a manually-collected arm.
-    """
-    blind = load_blind(EXPERIMENT / 'blind_translation_input.csv')
-    candidates_path = OUTPUT_DIR.parent / 'candidates.csv'
-    candidates = {r['dataset_record_id']: r for r in read_csv(candidates_path)}
-    if set(candidates) != {r['dataset_record_id'] for r in blind}:
-        raise ValueError('candidates.csv does not cover the full blind input; run ingest first')
-    audit = join_audit(blind, read_csv(ROOT / 'results/translation_discrepancies.csv'))
-    validation, subsets = [], []
-    for record in blind:
-        key = record['dataset_record_id']
-        candidate, evidence = candidates[key], audit[key]
-        alignment = None
-        if candidate['generation_status'] == 'SUCCESS':
-            metadata = json.loads(candidate['metadata_json'] or '{}')
-            alignment = {k: v for k, v in metadata.get('alignment', {}).items()
-                         if k != 'dataset_record_id'}
-        result = screen(record['text_original'], candidate, alignment)
-        result['flags'] = dumps(result['flags'])
-        validation.append({'dataset_record_id': key, 'tweet_id': record['tweet_id'], 'system': 'chatgpt_manual',
-                           'generation_status': candidate['generation_status'], **result,
-                           'legacy_audit_class': evidence['audit_class'],
-                           'known_original_toponyms_audit_hints': evidence['known_original_toponyms'],
-                           'audit_hints_exhaustive': False})
-    successes = sum(v['generation_status'] == 'SUCCESS' for v in validation)
-    for label, expected in EXPECTED_SUBSETS.items():
-        matching = [v for v in validation if v['legacy_audit_class'] == label]
-        subsets.append({'system': 'chatgpt_manual', 'audit_class': label, 'records': len(matching),
-                         'expected_records': expected,
-                         'successful_candidates': sum(v['generation_status'] == 'SUCCESS' for v in matching),
-                         'structural_mismatch': sum(v['validation_state'] == 'STRUCTURAL_MISMATCH' for v in matching),
-                         'automatically_approved': 0,
-                         'interpretation': 'legacy regression/review subset, not new gold truth'})
-    write_csv_once(OUTPUT_DIR.parent / 'validation_results.csv', validation) if not \
-        (OUTPUT_DIR.parent / 'validation_results.csv').exists() else _rewrite(OUTPUT_DIR.parent / 'validation_results.csv', validation)
-    write_csv_once(OUTPUT_DIR.parent / 'subset_comparison.csv', subsets) if not \
-        (OUTPUT_DIR.parent / 'subset_comparison.csv').exists() else _rewrite(OUTPUT_DIR.parent / 'subset_comparison.csv', subsets)
-    flag_counts = Counter(f for v in validation for f in json.loads(v['flags']))
-    print(f'{successes}/815 successful candidates screened.')
-    print('validation_state counts:', Counter(v['validation_state'] for v in validation))
-    print('structural_mismatch (self-alignment inconsistency):',
-          sum(v['validation_state'] == 'STRUCTURAL_MISMATCH' for v in validation))
-    print('top flags:', flag_counts.most_common(10))
-    print('severe-subset coverage:', next(s for s in subsets if s['audit_class'] == 'SEVERE_SPATIAL_DISCREPANCY'))
-    return validation, subsets
-
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('command', choices=['prepare', 'ingest', 'validate'])
+    parser.add_argument('command', choices=['prepare', 'ingest'])
     parser.add_argument('--batch-size', type=int, default=BATCH_SIZE)
     args = parser.parse_args()
     if args.command == 'prepare':
         prepare_batches(args.batch_size)
-    elif args.command == 'ingest':
-        ingest()
     else:
-        validate_and_report()
+        ingest()
 
 
 if __name__ == '__main__':

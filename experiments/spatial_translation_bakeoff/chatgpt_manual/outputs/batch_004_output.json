@@ -1,0 +1,2670 @@
+[
+  {
+    "dataset_record_id": "record:3851c00420ea32cc9e0bf27ee89911748f1d34ddb5e96d3d734dce6ee205e915",
+    "translation": "Traffic Alert: On the route from Azadpur to Filmistan, traffic is obstructed because a water pipeline has burst. Please avoid using this route.",
+    "place_mentions": [
+      {
+        "original_surface": "आजाद पुर",
+        "english_surface": "Azadpur",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "फिल्मिस्तान",
+        "english_surface": "Filmistan",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3884e1fb790d338755f81fdf44d40ec9aab9de2953fad611d22e16a5de80cf41",
+    "translation": "Traffic Alert: At Deoli Mor, after DJB repaired the water pipe and filled the pit yesterday, water is coming out again there today... The message is truncated.",
+    "place_mentions": [
+      {
+        "original_surface": "देवली मोड़",
+        "english_surface": "Deoli Mor",
+        "mention_order": 1,
+        "feature_type": "intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": [
+      "The tweet is truncated after \"आज दोबारा पानी निकल...\", so the full traffic consequence is not present."
+    ]
+  },
+  {
+    "dataset_record_id": "record:39d589183358299cccd8693e6dc1561d09f7c037e8ce5f7471b6574b65251777",
+    "translation": "Traffic Alert: Because a large number of tourists have arrived at Qutub Minar, the parking is full; as a result, while going from Hauz Khas toward Qutub Minar, traffic is obstructed on Aurobindo Marg.",
+    "place_mentions": [
+      {
+        "original_surface": "क़ुतुब मीनार",
+        "english_surface": "Qutub Minar",
+        "mention_order": 1,
+        "feature_type": "landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "हौज़ खास",
+        "english_surface": "Hauz Khas",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "क़ुतुब मीनार",
+        "english_surface": "Qutub Minar",
+        "mention_order": 3,
+        "feature_type": "landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "अरविंदो मार्ग",
+        "english_surface": "Aurobindo Marg",
+        "mention_order": 4,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_towards",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 4,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3ad2b13fa47cef23bc3577208b728dfa56375f2a4b4b93b95437ae2642cafd69",
+    "translation": "Traffic Alert: Traffic on the route from Naraina to Dhaula Kuan is now normal.",
+    "place_mentions": [
+      {
+        "original_surface": "नारायणा",
+        "english_surface": "Naraina",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "धौला कुआँ",
+        "english_surface": "Dhaula Kuan",
+        "mention_order": 2,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3b400cea0bd5b731536938aac5946fedc3dc6d154cec143f1d7f91acd43b729e",
+    "translation": "Traffic Alert: Delhi Jal Board personnel are working on the route from Khanpur to Lado Sarai, because of which traffic is obstructed.",
+    "place_mentions": [
+      {
+        "original_surface": "खानपुर",
+        "english_surface": "Khanpur",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "लाडो सराय",
+        "english_surface": "Lado Sarai",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3b52582053a93ce8240deef56de474da7900a84d11cfc8699fd6c6b76787c4df",
+    "translation": "Traffic Alert: A Gurpurab programme is underway at Bangla Sahib Gurdwara and Rakabganj Gurdwara. As a result, traffic is obstructed on Baba Kharak Singh Marg and Ashok Road. Please avoid using these roads.",
+    "place_mentions": [
+      {
+        "original_surface": "बंगला साहिब गुरुद्वारे",
+        "english_surface": "Bangla Sahib Gurdwara",
+        "mention_order": 1,
+        "feature_type": "gurdwara",
+        "uncertain": false
+      },
+      {
+        "original_surface": "रकाबगंज गुरुद्वारे",
+        "english_surface": "Rakabganj Gurdwara",
+        "mention_order": 2,
+        "feature_type": "gurdwara",
+        "uncertain": false
+      },
+      {
+        "original_surface": "बाबा खडग सिंह मार्ग",
+        "english_surface": "Baba Kharak Singh Marg",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "अशोक रोड",
+        "english_surface": "Ashok Road",
+        "mention_order": 4,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_obstructed_on",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_obstructed_on",
+        "source_mention_order": null,
+        "target_mention_order": 4,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3c4163cec4d8d49d379f3db98bf4a712e04af18785ebd49bf4c89b21a6ee96ef",
+    "translation": "Traffic Alert: Delhi Jal Board work is underway on the route from Red Fort to Fountain Chowk. Because of this, traffic from Shyama Prasad Mukherjee Marg and Netaji Subhash Marg to ISBT Kashmere Gate is obstructed on both carriageways.",
+    "place_mentions": [
+      {
+        "original_surface": "लाल किला",
+        "english_surface": "Red Fort",
+        "mention_order": 1,
+        "feature_type": "landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "फाउंटेन चौक",
+        "english_surface": "Fountain Chowk",
+        "mention_order": 2,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "श्यामा प्रसाद मुखेर्जी मार्ग",
+        "english_surface": "Shyama Prasad Mukherjee Marg",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "नेताजी सुभाष मार्ग",
+        "english_surface": "Netaji Subhash Marg",
+        "mention_order": 4,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "ISBT कश्मीरी गेट",
+        "english_surface": "ISBT Kashmere Gate",
+        "mention_order": 5,
+        "feature_type": "transport terminal",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to",
+        "source_mention_order": 3,
+        "target_mention_order": 5,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to",
+        "source_mention_order": 4,
+        "target_mention_order": 5,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 3,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3c41a4753f5b289dc4b9879e10697dc55181aaebfa0678db162788755bb295df",
+    "translation": "Traffic Alert: Because of a protest, the road from Gol Methi R/A to Motilal Nehru Place is closed to traffic.",
+    "place_mentions": [
+      {
+        "original_surface": "गोल मेथी R/A",
+        "english_surface": "Gol Methi R/A",
+        "mention_order": 1,
+        "feature_type": "roundabout/intersection",
+        "uncertain": true
+      },
+      {
+        "original_surface": "मोती लाल नेहरु प्लेस",
+        "english_surface": "Motilal Nehru Place",
+        "mention_order": 2,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "The abbreviation \"R/A\" is retained because it is not expanded in the source."
+    ]
+  },
+  {
+    "dataset_record_id": "record:3cb80f7794d82b30ff132bd91fa1579090a361ab1537e05270b22a3066fd87b7",
+    "translation": "Traffic Alert: On Outer Ring Road, immediately after turning toward Savitri Cinema (Greater Kailash), a sewer has caved in. Regret the inconvenience.",
+    "place_mentions": [
+      {
+        "original_surface": "आउटर रिंग रोड",
+        "english_surface": "Outer Ring Road",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "सवित्रि सिनेमा",
+        "english_surface": "Savitri Cinema",
+        "mention_order": 2,
+        "feature_type": "landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "ग्रेटर कैलाश",
+        "english_surface": "Greater Kailash",
+        "mention_order": 3,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "towards",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "parenthetical_location",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3d6493be497be004e5e24e17b10fe58efbf83b2e4685d28b6c81342580e96420",
+    "translation": "Traffic Alert 1/2: Bharat Parv is being celebrated at Red Fort, because of which buses going from Delhi Gate to Old Delhi are being routed toward Ring Road... The message is truncated.",
+    "place_mentions": [
+      {
+        "original_surface": "लाल किले",
+        "english_surface": "Red Fort",
+        "mention_order": 1,
+        "feature_type": "landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "दिल्ली गेट",
+        "english_surface": "Delhi Gate",
+        "mention_order": 2,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "पुरानी दिल्ली",
+        "english_surface": "Old Delhi",
+        "mention_order": 3,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "रिंग रोड",
+        "english_surface": "Ring Road",
+        "mention_order": 4,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "towards",
+        "source_mention_order": null,
+        "target_mention_order": 4,
+        "uncertain": true
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "The record is marked 1/2 and ends after \"रिंग रोड...\"; the exact relation of Ring Road to the bus movement is incomplete."
+    ]
+  },
+  {
+    "dataset_record_id": "record:3dbc9bb6c08016a9da9b7451e9294045856d58eb2969ce55d12d40a0ca82b75f",
+    "translation": "Traffic Alert: Near RK Ashram Marg Metro Station, on Panchkuian Road while going toward Connaught Place, a 15–20-foot pit has formed in the road, causing traffic to be affected.",
+    "place_mentions": [
+      {
+        "original_surface": "आर.के. आश्रम मार्ग मेट्रो स्टेशन",
+        "english_surface": "RK Ashram Marg Metro Station",
+        "mention_order": 1,
+        "feature_type": "metro station",
+        "uncertain": false
+      },
+      {
+        "original_surface": "पंचकुइंया रोड",
+        "english_surface": "Panchkuian Road",
+        "mention_order": 2,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "कनाट प्लेस",
+        "english_surface": "Connaught Place",
+        "mention_order": 3,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "towards",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3dcf43b1a20d059750f594b23f5988f852bde663f3c580cd75b625c91b6daf8c",
+    "translation": "Traffic Alert: A religious procession has started from Digambar Jain Temple, Red Fort, and will go via Fountain Chowk, Khari Baoli and Chandni Chowk to Pahari Dhiraj. Therefore, avoid using these routes.",
+    "place_mentions": [
+      {
+        "original_surface": "दिगम्बर जैन मंदिर",
+        "english_surface": "Digambar Jain Temple",
+        "mention_order": 1,
+        "feature_type": "temple",
+        "uncertain": false
+      },
+      {
+        "original_surface": "लाल किला",
+        "english_surface": "Red Fort",
+        "mention_order": 2,
+        "feature_type": "landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "फव्वारा चौक",
+        "english_surface": "Fountain Chowk",
+        "mention_order": 3,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "खारी बावली",
+        "english_surface": "Khari Baoli",
+        "mention_order": 4,
+        "feature_type": "locality/market",
+        "uncertain": false
+      },
+      {
+        "original_surface": "चांदनी चौक",
+        "english_surface": "Chandni Chowk",
+        "mention_order": 5,
+        "feature_type": "locality/market",
+        "uncertain": false
+      },
+      {
+        "original_surface": "पहाड़ी धीरज",
+        "english_surface": "Pahari Dhiraj",
+        "mention_order": 6,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from",
+        "source_mention_order": 1,
+        "target_mention_order": null,
+        "uncertain": false
+      },
+      {
+        "relation": "at",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 1,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 3,
+        "target_mention_order": 4,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 4,
+        "target_mention_order": 5,
+        "uncertain": false
+      },
+      {
+        "relation": "to",
+        "source_mention_order": 5,
+        "target_mention_order": 6,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3e4ebdbf842687113a13ce7617dbee1e586bf6bb06db2fb6dfc57894cf86d0c4",
+    "translation": "Traffic Alert: The Delhi Jal Board and Delhi Metro work on Panchsheel Marg has now finished; traffic is normal.",
+    "place_mentions": [
+      {
+        "original_surface": "पंचशील मार्ग",
+        "english_surface": "Panchsheel Marg",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_normal_on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3f19660301c47e4052db0ac667e1e2ec111d9b5c6facbef4ff2cefeb7381fcfa",
+    "translation": "Traffic Alert: On the route from Gurugram to Mehrauli, the road near CDR Chowk that had subsided has been repaired; traffic is now normal.",
+    "place_mentions": [
+      {
+        "original_surface": "गुरुग्राम",
+        "english_surface": "Gurugram",
+        "mention_order": 1,
+        "feature_type": "city",
+        "uncertain": false
+      },
+      {
+        "original_surface": "महरौली",
+        "english_surface": "Mehrauli",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "CDR चौक",
+        "english_surface": "CDR Chowk",
+        "mention_order": 3,
+        "feature_type": "intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3f8f963a8c0b38aa0c5e62b58ac334b08ff4c61a1651ff807172e54d76e1b10d",
+    "translation": "Traffic Alert: Because the local councillor's mother has died, traffic will remain heavy on MB Road at Khanpur. Regret the inconvenience.",
+    "place_mentions": [
+      {
+        "original_surface": "एम् बी रोड",
+        "english_surface": "MB Road",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "खानपुर",
+        "english_surface": "Khanpur",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "at",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3fc8d189b69eca06ff39eff51612c26e1f3a2e61daef4faa0d0df6b980ec2ad8",
+    "translation": "Traffic Alert: On the route from Pratap Nagar Metro Station to Azad Market, PWD will work from 11 PM tonight. Because of this, traffic will remain obstructed.",
+    "place_mentions": [
+      {
+        "original_surface": "प्रताप नगर मेट्रो स्टेशन",
+        "english_surface": "Pratap Nagar Metro Station",
+        "mention_order": 1,
+        "feature_type": "metro station",
+        "uncertain": false
+      },
+      {
+        "original_surface": "आजाद मार्किट",
+        "english_surface": "Azad Market",
+        "mention_order": 2,
+        "feature_type": "market/locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:3fd044582626ed82fc7ff6cf04e4e081d58b8b3bb4cc7cac45160fc75516c898",
+    "translation": "Traffic Alert: Because Durga Puja is being held in CR Park, traffic is affected on Bipin Chandra Pal Marg and Savitri Cinema Road.",
+    "place_mentions": [
+      {
+        "original_surface": "CR पार्क",
+        "english_surface": "CR Park",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "विपिन चन्द्र पाल मार्ग",
+        "english_surface": "Bipin Chandra Pal Marg",
+        "mention_order": 2,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "सावित्री सिनेमा रोड",
+        "english_surface": "Savitri Cinema Road",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "in",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_affected_on",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_affected_on",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:406fd55350c47c4f072aa87de7917a455394ac4f02c45aabd885be5ba3e30c31",
+    "translation": "Traffic Alert: Traffic is affected on both sides under Moti Bagh Flyover because of waterlogging.",
+    "place_mentions": [
+      {
+        "original_surface": "मोती बाग फ्लाईओवर",
+        "english_surface": "Moti Bagh Flyover",
+        "mention_order": 1,
+        "feature_type": "flyover",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "under",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:40b55dc41dad1a3dc494c7c4479955fdda66ca40cd93349a5719c9a717357043",
+    "translation": "Traffic Alert 1/2: On Ring Road, on the route from Naraina Flyover toward Dhaula Kuan, the road that had subsided immediately after descending from Naraina Flyover... The message is incomplete.",
+    "place_mentions": [
+      {
+        "original_surface": "रिंग रोड",
+        "english_surface": "Ring Road",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "नारायणा फ्लाईओवर",
+        "english_surface": "Naraina Flyover",
+        "mention_order": 2,
+        "feature_type": "flyover",
+        "uncertain": false
+      },
+      {
+        "original_surface": "धौला कुआँ",
+        "english_surface": "Dhaula Kuan",
+        "mention_order": 3,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "नारायणा फ्लाईओवर",
+        "english_surface": "Naraina Flyover",
+        "mention_order": 4,
+        "feature_type": "flyover",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_towards",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "after_descending_from",
+        "source_mention_order": null,
+        "target_mention_order": 4,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "The record is marked 1/2 and ends after describing the subsided road; the consequence or resolution is missing."
+    ]
+  },
+  {
+    "dataset_record_id": "record:40ed001df574cfbc5f075bdf22005531133fa70c68ffd7fbe0889afa6b4c4fe1",
+    "translation": "Traffic Alert: At the Mathura Road / Sher Shah Road crossing, on the route from Mathura Road to CXC Gun, a tree has fallen, causing heavy traffic... The message is incomplete.",
+    "place_mentions": [
+      {
+        "original_surface": "मथुरा रोड",
+        "english_surface": "Mathura Road",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "शेर शाह रोड",
+        "english_surface": "Sher Shah Road",
+        "mention_order": 2,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "मथुरा रोड",
+        "english_surface": "Mathura Road",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "CXC Gun",
+        "english_surface": "CXC Gun",
+        "mention_order": 4,
+        "feature_type": "place/landmark",
+        "uncertain": true
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "crossing",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to",
+        "source_mention_order": 3,
+        "target_mention_order": 4,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "The record is marked 1/2 and is truncated after stating that traffic is heavy.",
+      "The place name \"CXC Gun\" is retained exactly because its identity is uncertain."
+    ]
+  },
+  {
+    "dataset_record_id": "record:40f285b449a09595e5e7ed24033323746bc2ff87e22b44c57526241b5565a87b",
+    "translation": "Traffic Alert: The All India Kisan Sangharsh Coordination Committee march has just started from Ramlila Maidan and is now on Jawaharlal Nehru Marg; 7,000 to 8,000 people are participating. Traffic is affected.",
+    "place_mentions": [
+      {
+        "original_surface": "रामलीला मैदान",
+        "english_surface": "Ramlila Maidan",
+        "mention_order": 1,
+        "feature_type": "ground/landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "जवाहर लाल नेहरू मार्ग",
+        "english_surface": "Jawaharlal Nehru Marg",
+        "mention_order": 2,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from",
+        "source_mention_order": 1,
+        "target_mention_order": null,
+        "uncertain": false
+      },
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:41eaa7ac25b2b28e6d54e1d92219e10f9a82a1e5989238a1f0b7a9357bb0c078",
+    "translation": "Traffic Alert: Buses going from ITO Chowk to Laxmi Nagar have been diverted via Delhi Gate.",
+    "place_mentions": [
+      {
+        "original_surface": "ITO चौक",
+        "english_surface": "ITO Chowk",
+        "mention_order": 1,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "लक्ष्मी नगर",
+        "english_surface": "Laxmi Nagar",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "दिल्ली गेट",
+        "english_surface": "Delhi Gate",
+        "mention_order": 3,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "diverted_via",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4273d8c28afcd068edec8ab2430717171e23ed215a244aabad69859d7f978131",
+    "translation": "Traffic Alert: A Chhatrapati Shivaji Maharaj procession will start from Maharashtra Bhavan Delhi and go via Madhavrao Scindia Marg and Jaswant Singh Marg to Rajendra Prasad Road; traffic will remain affected on these routes.",
+    "place_mentions": [
+      {
+        "original_surface": "महाराष्ट्र भवन दिल्ली",
+        "english_surface": "Maharashtra Bhavan Delhi",
+        "mention_order": 1,
+        "feature_type": "building/landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "माधवराव स्सिन्डिया मार्ग",
+        "english_surface": "Madhavrao Scindia Marg",
+        "mention_order": 2,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "जसवंत सिंह मार्ग",
+        "english_surface": "Jaswant Singh Marg",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "राजेंदर प्रसाद रोड",
+        "english_surface": "Rajendra Prasad Road",
+        "mention_order": 4,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from",
+        "source_mention_order": 1,
+        "target_mention_order": null,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "to",
+        "source_mention_order": 3,
+        "target_mention_order": 4,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:42792c78ddb7df8902838124b6c589e3838d1b767047c667aa4ffa5a468641e1",
+    "translation": "Traffic Alert: Repair work is underway in the service lane going from CDR Chowk to Mehrauli Metro Station. As a result, traffic is obstructed.",
+    "place_mentions": [
+      {
+        "original_surface": "CDR चौक",
+        "english_surface": "CDR Chowk",
+        "mention_order": 1,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "महरोली मेट्रो स्टेशन",
+        "english_surface": "Mehrauli Metro Station",
+        "mention_order": 2,
+        "feature_type": "metro station",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4280eb3b0b03f33742931d75ad082789f68f58a181ec6b1f7b0f7505c13f4a51",
+    "translation": "Traffic Alert: On the route from MB Road to Mehrauli, one tree has fallen near Khanpur, causing traffic to be obstructed.",
+    "place_mentions": [
+      {
+        "original_surface": "M.B रोड",
+        "english_surface": "MB Road",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "महरौली",
+        "english_surface": "Mehrauli",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "खानपुर",
+        "english_surface": "Khanpur",
+        "mention_order": 3,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:42b2318749302976ebbd0defc3af34949b60673fd2ce374cd7c0422d091b63b8",
+    "translation": "Traffic Alert: At 12 PM, a bike rally will depart from 10 Ashoka Road, travel from 10 Ashoka Road via Janpath and CP Place, and return to 10 Ashoka Road.",
+    "place_mentions": [
+      {
+        "original_surface": "10 अशोका रोड",
+        "english_surface": "10 Ashoka Road",
+        "mention_order": 1,
+        "feature_type": "address/road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "10 अशोका रोड",
+        "english_surface": "10 Ashoka Road",
+        "mention_order": 2,
+        "feature_type": "address/road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "जनपथ",
+        "english_surface": "Janpath",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "CP प्लेस",
+        "english_surface": "CP Place",
+        "mention_order": 4,
+        "feature_type": "locality",
+        "uncertain": true
+      },
+      {
+        "original_surface": "10 अशोका रोड",
+        "english_surface": "10 Ashoka Road",
+        "mention_order": 5,
+        "feature_type": "address/road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from",
+        "source_mention_order": 1,
+        "target_mention_order": null,
+        "uncertain": false
+      },
+      {
+        "relation": "from",
+        "source_mention_order": 2,
+        "target_mention_order": null,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 3,
+        "target_mention_order": 4,
+        "uncertain": false
+      },
+      {
+        "relation": "return_to",
+        "source_mention_order": 4,
+        "target_mention_order": 5,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "\"CP प्लेस\" is rendered as \"CP Place\" without expanding or normalizing the abbreviation beyond the source."
+    ]
+  },
+  {
+    "dataset_record_id": "record:42c2b332ed61cbcfd3d80041ad066662e55275cf28a4a3f316fc2676d1e203e5",
+    "translation": "Part 1/3. Traffic Alert: MCD road-repair work at Baraf Khana Chowk will continue for 15 days, because of which the Sarai... route from Khanna Market to Baraf Khana is mentioned, but the message is truncated.",
+    "place_mentions": [
+      {
+        "original_surface": "बर्फ खाना चौक",
+        "english_surface": "Baraf Khana Chowk",
+        "mention_order": 1,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "खन्ना मार्किट",
+        "english_surface": "Khanna Market",
+        "mention_order": 2,
+        "feature_type": "market/locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "बर्फ खाना",
+        "english_surface": "Baraf Khana",
+        "mention_order": 3,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "सराय",
+        "english_surface": "Sarai",
+        "mention_order": 4,
+        "feature_type": "place/road fragment",
+        "uncertain": true
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 4,
+        "uncertain": true
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "The record is Part 1/3 and ends at \"सराय\", so the road name and full traffic consequence are incomplete."
+    ]
+  },
+  {
+    "dataset_record_id": "record:42e74c3e25ec66a8190fc1f27b310a968447d3f0bac14c0acac2b62df3e106c1",
+    "translation": "Traffic Alert: The parking at Select City Mall on Press Enclave Road is full, because of which traffic is obstructed. Avoid using this route.",
+    "place_mentions": [
+      {
+        "original_surface": "प्रेस एन्क्लेव रोड",
+        "english_surface": "Press Enclave Road",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "सेलेक्ट सिटी मॉल",
+        "english_surface": "Select City Mall",
+        "mention_order": 2,
+        "feature_type": "mall/landmark",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": 2,
+        "target_mention_order": 1,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:42e8437f7c5e14ab1431e9fa46122acd7ac3bea5d254ae4995ded4daf6957355",
+    "translation": "Traffic Alert: On the route from Akbar Road Roundabout toward India Gate, traffic is affected because of leakage from a sewer pipeline.",
+    "place_mentions": [
+      {
+        "original_surface": "अकबर रोड गोल चक्कर",
+        "english_surface": "Akbar Road Roundabout",
+        "mention_order": 1,
+        "feature_type": "roundabout/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "इंडिया गेट",
+        "english_surface": "India Gate",
+        "mention_order": 2,
+        "feature_type": "landmark",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_towards",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4387446d33c84603d238c67adeab7124ad909ad5efda1e51edf168597c0b8889",
+    "translation": "Traffic Alert: On the route from Britannia Chowk to Haryana Maitri Bhawan, a large tree has fallen in front of Shakur Basti.",
+    "place_mentions": [
+      {
+        "original_surface": "Britannia Chowk",
+        "english_surface": "Britannia Chowk",
+        "mention_order": 1,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "हरियाणा मैत्री भवन",
+        "english_surface": "Haryana Maitri Bhawan",
+        "mention_order": 2,
+        "feature_type": "building/landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "शकूरबस्ती",
+        "english_surface": "Shakur Basti",
+        "mention_order": 3,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "in_front_of",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:43a3646d1632e04402c6348945c795ad1675f6b76fcfa74d4ab4d52a1e21107e",
+    "translation": "Traffic Alert: Traffic is affected because of waterlogging at Badarpur Railway Underpass, Ali Gaon Red Light, under IP Flyover, under Modi Mill Flyover, on Jawaharlal Nehru Marg near Guru Nanak Chowk, and near MCD HQ at Ramlila Maidan.",
+    "place_mentions": [
+      {
+        "original_surface": "बदरपुर रेलवे अंडरपास",
+        "english_surface": "Badarpur Railway Underpass",
+        "mention_order": 1,
+        "feature_type": "underpass",
+        "uncertain": false
+      },
+      {
+        "original_surface": "आली गाँव रेड लाइट",
+        "english_surface": "Ali Gaon Red Light",
+        "mention_order": 2,
+        "feature_type": "traffic signal/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "I P फ्लाईओवर",
+        "english_surface": "IP Flyover",
+        "mention_order": 3,
+        "feature_type": "flyover",
+        "uncertain": false
+      },
+      {
+        "original_surface": "मोदी मिल फ्लाईओवर",
+        "english_surface": "Modi Mill Flyover",
+        "mention_order": 4,
+        "feature_type": "flyover",
+        "uncertain": false
+      },
+      {
+        "original_surface": "जवाहरलाल नेहरु मार्ग",
+        "english_surface": "Jawaharlal Nehru Marg",
+        "mention_order": 5,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "गुरु नानक चौक",
+        "english_surface": "Guru Nanak Chowk",
+        "mention_order": 6,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "रामलीला मैदान",
+        "english_surface": "Ramlila Maidan",
+        "mention_order": 7,
+        "feature_type": "ground/landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "MCD HQ",
+        "english_surface": "MCD HQ",
+        "mention_order": 8,
+        "feature_type": "building/landmark",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "under",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "under",
+        "source_mention_order": null,
+        "target_mention_order": 4,
+        "uncertain": false
+      },
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 5,
+        "uncertain": false
+      },
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 6,
+        "uncertain": false
+      },
+      {
+        "relation": "at",
+        "source_mention_order": 8,
+        "target_mention_order": 7,
+        "uncertain": false
+      },
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 8,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:43f51b641022e1926ef9582d3f11310c5695163a45f3d16cd18d176b53a1288b",
+    "translation": "Traffic Alert: On Shahi Road going from Bijwasan Village toward Dwarka Link Road, traffic is affected because of a farmers' rally. Please avoid using this route.",
+    "place_mentions": [
+      {
+        "original_surface": "बिजवासन गाँव",
+        "english_surface": "Bijwasan Village",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "Dwarka Link Road",
+        "english_surface": "Dwarka Link Road",
+        "mention_order": 2,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "शाही रोड",
+        "english_surface": "Shahi Road",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_towards",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:446404355513e5de27daa2512a5d26bf4f30a675a39e462759c79a0e85271d79",
+    "translation": "Traffic Alert: Because of a protest at Jantar Mantar, the route from Patel Chowk to Jantar Mantar has been closed.",
+    "place_mentions": [
+      {
+        "original_surface": "जंतर मंतर",
+        "english_surface": "Jantar Mantar",
+        "mention_order": 1,
+        "feature_type": "landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "पटेल चौक",
+        "english_surface": "Patel Chowk",
+        "mention_order": 2,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "जंतर मंतर",
+        "english_surface": "Jantar Mantar",
+        "mention_order": 3,
+        "feature_type": "landmark",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:446daf785135f4ed18cfa6454f47def8bfaaa3d5474041aa5c52dcf5d89407b4",
+    "translation": "Traffic Alert: Because of the Nirankari congregation, traffic will remain affected in both directions from Kingsway Camp Chowk to Burari.",
+    "place_mentions": [
+      {
+        "original_surface": "किंग्सवे कैंप चौक",
+        "english_surface": "Kingsway Camp Chowk",
+        "mention_order": 1,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "बुराड़ी",
+        "english_surface": "Burari",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to_both_directions",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:44a7efdb4f48d02a8e78941da318e709fc3f78eb556258a9cc42acdd3f40290d",
+    "translation": "Traffic Alert: On the route from Janak Setu to Dhaula Kuan, traffic is obstructed because the road has subsided on Station Road near Dhaula Kuan. Please avoid using this route.",
+    "place_mentions": [
+      {
+        "original_surface": "जनक सेतु",
+        "english_surface": "Janak Setu",
+        "mention_order": 1,
+        "feature_type": "bridge",
+        "uncertain": false
+      },
+      {
+        "original_surface": "धौलाकुंआँ",
+        "english_surface": "Dhaula Kuan",
+        "mention_order": 2,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "स्टेशन रोड",
+        "english_surface": "Station Road",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "धौलाकुंआँ",
+        "english_surface": "Dhaula Kuan",
+        "mention_order": 4,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 4,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:44b0a78315fdc5a316d4337efe34f8e8b7068ef46d8549966397f0da8a1920c8",
+    "translation": "Traffic Alert: Near Sapna Cinema in East of Kailash, traffic is affected because a tree has fallen on a car. Regret the inconvenience.",
+    "place_mentions": [
+      {
+        "original_surface": "ईस्ट ऑफ़ कैलाश",
+        "english_surface": "East of Kailash",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "सपना सिनेमा",
+        "english_surface": "Sapna Cinema",
+        "mention_order": 2,
+        "feature_type": "landmark",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "in",
+        "source_mention_order": 2,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:44f1645694aa34a0a5ed679dac0c9c5ebf9ef067de5185aeb2c688f9115efc8b",
+    "translation": "Traffic Alert: A tree has fallen near the Transport Authority on Rajpur Road, because of which traffic is affected.",
+    "place_mentions": [
+      {
+        "original_surface": "राजपुर रोड",
+        "english_surface": "Rajpur Road",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "परिवहन प्राधिकरण (Transport Authority)",
+        "english_surface": "Transport Authority",
+        "mention_order": 2,
+        "feature_type": "government office/landmark",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": 2,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:451722bdb7288796054b24b2b4be4712881211bdbf7993953ed957bdeb16532d",
+    "translation": "Traffic Alert: Repair work is underway on Naraina Flyover, because of which traffic here is obstructed.",
+    "place_mentions": [
+      {
+        "original_surface": "Naraina फ्लाईओवर",
+        "english_surface": "Naraina Flyover",
+        "mention_order": 1,
+        "feature_type": "flyover",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4522d989608851336e9efc54e9502220ee32050bf4e83b0041d926e022ec4b6c",
+    "translation": "Traffic Alert: On the route from Nehru Place to Sant Nagar, a large tree has fallen in front of Nehru Place Bus Stand.",
+    "place_mentions": [
+      {
+        "original_surface": "नेहरु प्लेस",
+        "english_surface": "Nehru Place",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "संत नगर",
+        "english_surface": "Sant Nagar",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "नेहरु प्लेस बस स्टैंड",
+        "english_surface": "Nehru Place Bus Stand",
+        "mention_order": 3,
+        "feature_type": "bus stand",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "in_front_of",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:45a471d451e08d7cdc21fb922e3cba93cbfc33df7a87439dc34e2fc827a783e9",
+    "translation": "Traffic Alert: On the route from Sarita Vihar to Kalindi Kunj, a truck had overturned and has now been removed.",
+    "place_mentions": [
+      {
+        "original_surface": "सरिता विहार",
+        "english_surface": "Sarita Vihar",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "कालिंदी कुंज",
+        "english_surface": "Kalindi Kunj",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:460b9158a2277cded312a6c2dac2854dc1935b62404b8e4e85a9c34c02f749c5",
+    "translation": "Traffic Alert: Traffic at Azad Market Chowk is now normal.",
+    "place_mentions": [
+      {
+        "original_surface": "आजाद मार्किट चौक",
+        "english_surface": "Azad Market Chowk",
+        "mention_order": 1,
+        "feature_type": "intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "traffic_normal_at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4700ebb49739e6fbdd82c686160306a0af8383c4335fd245d7fc1587dbb3841e",
+    "translation": "Traffic Alert: Rainwater has accumulated at Zakir Hussain College and Guru Nanak Chowk, because of which traffic is heavy.",
+    "place_mentions": [
+      {
+        "original_surface": "जाकिर हुसैन कॉलेज",
+        "english_surface": "Zakir Hussain College",
+        "mention_order": 1,
+        "feature_type": "college",
+        "uncertain": false
+      },
+      {
+        "original_surface": "गुरु नानक चौक",
+        "english_surface": "Guru Nanak Chowk",
+        "mention_order": 2,
+        "feature_type": "intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4710a991f6a6f69cd8dc1e2446619fa9c895a0669c27a01aefabdccd1a1a7fd5",
+    "translation": "Traffic Alert: MCD road-repair work at Baraf Khana Chowk will continue for 15 days, because of which the route from Khanna Market to Baraf Khana on Sarai Phoos Road... The record ends with \"2/1\" and is incomplete.",
+    "place_mentions": [
+      {
+        "original_surface": "बर्फ खाना चौक",
+        "english_surface": "Baraf Khana Chowk",
+        "mention_order": 1,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "खन्ना मार्किट",
+        "english_surface": "Khanna Market",
+        "mention_order": 2,
+        "feature_type": "market/locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "बर्फ खाना",
+        "english_surface": "Baraf Khana",
+        "mention_order": 3,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "सराय फूस रोड",
+        "english_surface": "Sarai Phoos Road",
+        "mention_order": 4,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 4,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "The source ends after \"सराय फूस रोड 2/1\" and does not state the full traffic consequence. The \"2/1\" marker is preserved as an apparent multipart indicator."
+    ]
+  },
+  {
+    "dataset_record_id": "record:483bc1faf3c1103023c69a65cc614f65b0576506286d9e24453b7edabe04e9c2",
+    "translation": "Traffic Alert: Traffic is now normal on Kamal Ataturk Marg and at Samrat Hotel Roundabout.",
+    "place_mentions": [
+      {
+        "original_surface": "क़माल अताह तुर्क मार्ग",
+        "english_surface": "Kamal Ataturk Marg",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "सम्राट होटल गोल चक्कर",
+        "english_surface": "Samrat Hotel Roundabout",
+        "mention_order": 2,
+        "feature_type": "roundabout/intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "traffic_normal_on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_normal_at",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:485e6150cc6aceb4d27e0e78b8bafebda66bf2c7ac40b0246825b37d4e67840f",
+    "translation": "Traffic Alert: Because of Friday prayers today, traffic going from Modi Mill toward Lajpat Nagar has been made one-way. Regret the inconvenience.",
+    "place_mentions": [
+      {
+        "original_surface": "मोदीमिल",
+        "english_surface": "Modi Mill",
+        "mention_order": 1,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "लाजपत नगर",
+        "english_surface": "Lajpat Nagar",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "one_way_from_towards",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:486ee35e64c768483d1e23531c7c970d5fee04247c9feda4db1f56c624846e16",
+    "translation": "Traffic Alert: Delhi Metro work is underway at Ashram Chowk, because of which traffic at Ashram Chowk will remain heavy for 2 hours.",
+    "place_mentions": [
+      {
+        "original_surface": "आश्रम चौक",
+        "english_surface": "Ashram Chowk",
+        "mention_order": 1,
+        "feature_type": "intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "आश्रम चौक",
+        "english_surface": "Ashram Chowk",
+        "mention_order": 2,
+        "feature_type": "intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_heavy_at",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:488080177b0a8d9a7d0d07fe523f7d1975e42ab337db8a7eb5612b3980717112",
+    "translation": "Traffic Alert: Because of a protest at Samalkha T-Point, traffic from Dwarka to Gurugram is affected on both carriageways.",
+    "place_mentions": [
+      {
+        "original_surface": "समालखा T-Point",
+        "english_surface": "Samalkha T-Point",
+        "mention_order": 1,
+        "feature_type": "T-point/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "द्वारका",
+        "english_surface": "Dwarka",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "गुरुग्राम",
+        "english_surface": "Gurugram",
+        "mention_order": 3,
+        "feature_type": "city",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to_both_carriageways",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4888e48a9b79993d5595cfb9cfad4a067a0ca080aebafbdad027dfa58fb99a80",
+    "translation": "Traffic Alert: DTC bus DL1PC 7605 has broken down at Minto Road Outer Circle, causing heavy traffic at Minto Road Outer Circle.",
+    "place_mentions": [
+      {
+        "original_surface": "मिन्टो रोड आउटर सर्किल",
+        "english_surface": "Minto Road Outer Circle",
+        "mention_order": 1,
+        "feature_type": "road/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "मिन्टो रोड आउटर सर्किल",
+        "english_surface": "Minto Road Outer Circle",
+        "mention_order": 2,
+        "feature_type": "road/intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_heavy_at",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:499c3ac9d1900e9b234452cec10d777a12458f5b6de114b93b006e01b7bf6934",
+    "translation": "Traffic Alert: On the route from Moti Bagh to Dhaula Kuan, a car has caught fire near Power House (Dhaula Kuan), because of which traffic is obstructed.",
+    "place_mentions": [
+      {
+        "original_surface": "मोती बाग",
+        "english_surface": "Moti Bagh",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "धौला कुआँ",
+        "english_surface": "Dhaula Kuan",
+        "mention_order": 2,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "पॉवर हाउस",
+        "english_surface": "Power House",
+        "mention_order": 3,
+        "feature_type": "landmark",
+        "uncertain": false
+      },
+      {
+        "original_surface": "धौला कुआँ",
+        "english_surface": "Dhaula Kuan",
+        "mention_order": 4,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "parenthetical_location",
+        "source_mention_order": 3,
+        "target_mention_order": 4,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:49b25bb4e1b9a5cfce5c3c430eb6d56137efa7c555dc887d0449ba5b2fe065a7",
+    "translation": "Traffic Alert: On the route from Gurugram to Dhaula Kuan, near Mahipalpur where an underpass is being built, the road has subsided and is being repaired; traffic here is obstructed.",
+    "place_mentions": [
+      {
+        "original_surface": "गुरुग्राम",
+        "english_surface": "Gurugram",
+        "mention_order": 1,
+        "feature_type": "city",
+        "uncertain": false
+      },
+      {
+        "original_surface": "धौला कुआँ",
+        "english_surface": "Dhaula Kuan",
+        "mention_order": 2,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "महिपाल पुर",
+        "english_surface": "Mahipalpur",
+        "mention_order": 3,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from_to",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:49d2bd5d6f48c608fd9fcd6a1b87c3e17b8b0d074b4e268455a594f9c33ef18b",
+    "translation": "Traffic Alert: Because a truck has broken down on Wazirabad Bridge, traffic has been diverted; as a result, traffic is heavy on the route from ISBT to Shastri Park Marg.",
+    "place_mentions": [
+      {
+        "original_surface": "वजीराबाद ब्रिज",
+        "english_surface": "Wazirabad Bridge",
+        "mention_order": 1,
+        "feature_type": "bridge",
+        "uncertain": false
+      },
+      {
+        "original_surface": "ISBT",
+        "english_surface": "ISBT",
+        "mention_order": 2,
+        "feature_type": "transport terminal",
+        "uncertain": false
+      },
+      {
+        "original_surface": "शास्त्री पार्क मार्ग",
+        "english_surface": "Shastri Park Marg",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4a16c096a8433fb725bb67c3e2c11576dd1ed2450165ec80a7dbdd1796bce365",
+    "translation": "Traffic Alert: The road has subsided at Buta Singh Roundabout, because of which traffic going from Buta Singh Roundabout toward Rafi Marg is obstructed.",
+    "place_mentions": [
+      {
+        "original_surface": "बूटा सिंह गोल चक्कर",
+        "english_surface": "Buta Singh Roundabout",
+        "mention_order": 1,
+        "feature_type": "roundabout/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "बूटा सिंह गोल चक्कर",
+        "english_surface": "Buta Singh Roundabout",
+        "mention_order": 2,
+        "feature_type": "roundabout/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "रफी मार्ग",
+        "english_surface": "Rafi Marg",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_towards",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4a51441c42d7d549a651c33a9e59d6fa5d8a8b35cf8c3604ad52bd21e74f4967",
+    "translation": "Traffic Alert: In Anand Parbat, sewer water is flowing onto the road in front of Gali No. 10. As a result, traffic is obstructed.",
+    "place_mentions": [
+      {
+        "original_surface": "आनंद पर्वत",
+        "english_surface": "Anand Parbat",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "गली नंबर 10",
+        "english_surface": "Gali No. 10",
+        "mention_order": 2,
+        "feature_type": "street",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "in",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "in_front_of",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4a61d98d86f08b5e5b90261f7dffc7e679d21867df666911d39fc30033a4251a",
+    "translation": "Traffic Alert: The road has subsided near Venkateswara College, because of which the route from Benito Juarez Marg toward Ring Road has been closed.",
+    "place_mentions": [
+      {
+        "original_surface": "वेंकटेश्वर कॉलेज",
+        "english_surface": "Venkateswara College",
+        "mention_order": 1,
+        "feature_type": "college",
+        "uncertain": false
+      },
+      {
+        "original_surface": "बेनितो जुआरेज मार्ग",
+        "english_surface": "Benito Juarez Marg",
+        "mention_order": 2,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "रिंग रोड",
+        "english_surface": "Ring Road",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "near",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_towards",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4a6c69c682a74ae72102f58ca8f82f8543cc7605338f4b82b8cb0f681e70e283",
+    "translation": "Traffic Alert: The Jain community's procession starts from Model Basti Filmistan and proceeds through Filmistan, Bara Tooti, Sadar Bazar, Qutub Road and Lahori Gate... The message is truncated.",
+    "place_mentions": [
+      {
+        "original_surface": "मोडल बस्ती फिल्मिस्तान",
+        "english_surface": "Model Basti Filmistan",
+        "mention_order": 1,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "फिल्मिस्तान",
+        "english_surface": "Filmistan",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "बारा टूटी",
+        "english_surface": "Bara Tooti",
+        "mention_order": 3,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "सदर बाजार",
+        "english_surface": "Sadar Bazar",
+        "mention_order": 4,
+        "feature_type": "market/locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "क़ुतुब रोड",
+        "english_surface": "Qutub Road",
+        "mention_order": 5,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "लाहोरी गेट",
+        "english_surface": "Lahori Gate",
+        "mention_order": 6,
+        "feature_type": "locality/gate",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "from",
+        "source_mention_order": 1,
+        "target_mention_order": null,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 3,
+        "target_mention_order": 4,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 4,
+        "target_mention_order": 5,
+        "uncertain": false
+      },
+      {
+        "relation": "via",
+        "source_mention_order": 5,
+        "target_mention_order": 6,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "The tweet is truncated after \"लाहोरी गेट,...\", so the remaining waypoints and final destination are not present."
+    ]
+  },
+  {
+    "dataset_record_id": "record:4a7159f500db15800f3067256dc70eaef0a212abb67bb4e08b55b71106174cb2",
+    "translation": "Traffic Alert: Metro work is underway on the route from Delhi Gate (Najafgarh) toward Nangloi, because of which Delhi... The message is truncated.",
+    "place_mentions": [
+      {
+        "original_surface": "दिल्ली गेट",
+        "english_surface": "Delhi Gate",
+        "mention_order": 1,
+        "feature_type": "locality/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "नजफगढ़",
+        "english_surface": "Najafgarh",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "नांगलोई",
+        "english_surface": "Nangloi",
+        "mention_order": 3,
+        "feature_type": "locality",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "parenthetical_location",
+        "source_mention_order": 1,
+        "target_mention_order": 2,
+        "uncertain": false
+      },
+      {
+        "relation": "from_towards",
+        "source_mention_order": 1,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "The tweet is truncated after \"जिसके कारण दिल्ली...\", so the traffic consequence is incomplete."
+    ]
+  },
+  {
+    "dataset_record_id": "record:4a83c1cebbd9d0f616b2eab8c26efbf9b5d1ab0112eb6e574540865876af788c",
+    "translation": "Traffic Alert: The All India Kisan Sangharsh Coordination Committee march is currently on Ranjit Singh Flyover; 7,000 to 8,000 people are participating. Traffic here is affected.",
+    "place_mentions": [
+      {
+        "original_surface": "रणजीत सिंह फ्लाईओवर",
+        "english_surface": "Ranjit Singh Flyover",
+        "mention_order": 1,
+        "feature_type": "flyover",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_affected_at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4afe819d5e21abe5aff72ff33c6ec926e5770d0c1b469fb9ff64a36182c5f372",
+    "translation": "Traffic Alert: Traffic is heavy at Ram Manohar Lohia Hospital and on Park Street.",
+    "place_mentions": [
+      {
+        "original_surface": "राम मनोहर लोहिया अस्पताल",
+        "english_surface": "Ram Manohar Lohia Hospital",
+        "mention_order": 1,
+        "feature_type": "hospital",
+        "uncertain": false
+      },
+      {
+        "original_surface": "पार्क स्ट्रीट",
+        "english_surface": "Park Street",
+        "mention_order": 2,
+        "feature_type": "road",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "traffic_heavy_at",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "traffic_heavy_on",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 0,
+    "translation_uncertainties": []
+  },
+  {
+    "dataset_record_id": "record:4b05ad65563bbceccdfc1332328a3a70460c6432d73ed58fe5e5afcab5d76605",
+    "translation": "Traffic Alert: Because of a rally, the route associated with New Delhi, Connaught Place Outer Circle and DDU Marg going to Ramlila Maidan is closed to traffic.",
+    "place_mentions": [
+      {
+        "original_surface": "नई दिल्ली",
+        "english_surface": "New Delhi",
+        "mention_order": 1,
+        "feature_type": "locality/city",
+        "uncertain": false
+      },
+      {
+        "original_surface": "कनाट प्लेस आउटर सर्किल",
+        "english_surface": "Connaught Place Outer Circle",
+        "mention_order": 2,
+        "feature_type": "road/intersection",
+        "uncertain": false
+      },
+      {
+        "original_surface": "DDU मार्ग",
+        "english_surface": "DDU Marg",
+        "mention_order": 3,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "रामलीला मैदान",
+        "english_surface": "Ramlila Maidan",
+        "mention_order": 4,
+        "feature_type": "ground/landmark",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "at_or_through",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": true
+      },
+      {
+        "relation": "at_or_through",
+        "source_mention_order": null,
+        "target_mention_order": 2,
+        "uncertain": true
+      },
+      {
+        "relation": "at_or_through",
+        "source_mention_order": null,
+        "target_mention_order": 3,
+        "uncertain": true
+      },
+      {
+        "relation": "to",
+        "source_mention_order": null,
+        "target_mention_order": 4,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": [
+      "The comma-separated syntax does not explicitly specify how New Delhi, Connaught Place Outer Circle and DDU Marg relate to one another; they are preserved without inferring a precise waypoint sequence."
+    ]
+  },
+  {
+    "dataset_record_id": "record:4b4588054cc5607b5c5b5b8b34d4d6c4983fbdb7716413f4c75fa586a8830986",
+    "translation": "Traffic Alert: On Wazirabad Road, a procession is moving from Yamuna Vihar to Khajuri Chowk, because of which traffic is jammed. Regret the inconvenience.",
+    "place_mentions": [
+      {
+        "original_surface": "वजीराबाद रोड",
+        "english_surface": "Wazirabad Road",
+        "mention_order": 1,
+        "feature_type": "road",
+        "uncertain": false
+      },
+      {
+        "original_surface": "यमुना विहार",
+        "english_surface": "Yamuna Vihar",
+        "mention_order": 2,
+        "feature_type": "locality",
+        "uncertain": false
+      },
+      {
+        "original_surface": "खजुरी चोक",
+        "english_surface": "Khajuri Chowk",
+        "mention_order": 3,
+        "feature_type": "intersection",
+        "uncertain": false
+      }
+    ],
+    "spatial_relations": [
+      {
+        "relation": "on",
+        "source_mention_order": null,
+        "target_mention_order": 1,
+        "uncertain": false
+      },
+      {
+        "relation": "from_to",
+        "source_mention_order": 2,
+        "target_mention_order": 3,
+        "uncertain": false
+      }
+    ],
+    "route_clause_count": 1,
+    "translation_uncertainties": []
+  }
+]

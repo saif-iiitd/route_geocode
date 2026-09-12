@@ -1,0 +1,6 @@
+system,audit_class,records,expected_records,successful_candidates,structural_mismatch,automatically_approved,interpretation
+chatgpt_manual,SEVERE_SPATIAL_DISCREPANCY,77,77,77,6,0,"legacy regression/review subset, not new gold truth"
+chatgpt_manual,POSSIBLE_TOPONYM_CHANGE,104,104,104,14,0,"legacy regression/review subset, not new gold truth"
+chatgpt_manual,POSSIBLE_SPATIAL_RELATION_CHANGE,57,57,57,8,0,"legacy regression/review subset, not new gold truth"
+chatgpt_manual,UNRESOLVED_CROSS_LANGUAGE,548,548,548,27,0,"legacy regression/review subset, not new gold truth"
+chatgpt_manual,BENIGN_TEXTUAL_DIFFERENCE,29,29,29,1,0,"legacy regression/review subset, not new gold truth"
