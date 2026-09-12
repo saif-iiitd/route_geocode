@@ -7,10 +7,11 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from src.translation_bakeoff.common import (EXPERIMENT, BLIND_FIELDS, blind_record, dumps, file_sha,
+from src.translation_bakeoff.common import (EXPERIMENT, BLIND_FIELDS, SYSTEMS, blind_record, dumps, file_sha,
     load_blind, smoke_sample, write_csv_once, write_json_once, write_text_once, verify_freeze)
 from src.translation_bakeoff.schema import validate_alignment
-from src.translation_bakeoff.adapters import openai_request, OpenAIArm, GoogleArm, ProviderFailure
+from src.translation_bakeoff.adapters import (openai_request, OpenAIArm, GoogleArm, OllamaArm,
+    ollama_request, strip_code_fence, ProviderFailure)
 from src.translation_bakeoff.generate import run, candidate_rows
 from src.translation_bakeoff.validate import screen
 from src.translation_bakeoff.evaluate import evaluate
@@ -121,11 +122,12 @@ class BlindContractTests(unittest.TestCase):
             write_csv_once(exp/'blind_translation_input.csv', [record(n) for n in range(815)], BLIND_FIELDS)
             write_text_once(exp/'config/run_config.json', (EXPERIMENT/'config/run_config.json').read_text())
             write_text_once(exp/'prompts/openai_spatial_translation.txt', 'Generic translation instructions.')
+            write_text_once(exp/'prompts/ollama_spatial_translation.txt', 'Generic translation instructions.')
             with patch('src.translation_bakeoff.generate.preflight', return_value=['TEST_NO_CREDENTIALS']):
                 run('test-only', exp)
             freeze = verify_freeze(exp, 'test-only')
             self.assertTrue(freeze['candidate_generation_closed'])
-            for system in ('indictrans2', 'google', 'openai'):
+            for system in SYSTEMS:
                 with (exp/f'runs/{system}/test-only/candidates.csv').open(encoding='utf-8',newline='') as f:
                     rows = list(csv.DictReader(f))
                 self.assertEqual(len(rows), 815)
@@ -152,6 +154,52 @@ class BlindContractTests(unittest.TestCase):
         self.assertEqual(translated, alignment()['translation'])
         self.assertEqual(metadata['actual_model'], 'gpt-5.6-sol')
         self.assertEqual(json.loads(request.call_args.args[0].data)['input'], dumps(record()))
+
+    def test_ollama_payload_is_blind_schema_enforced_and_tool_free(self):
+        cfg = {'model': 'gemma4:e4b', 'temperature': 0, 'seed': 1}
+        payload = ollama_request(record(), cfg, 'Generic rules only.')
+        self.assertEqual(json.loads(payload['messages'][1]['content']), record())
+        self.assertEqual(payload['messages'][0], {'role': 'system', 'content': 'Generic rules only.'})
+        self.assertEqual(payload['model'], 'gemma4:e4b')
+        self.assertIn('translation', payload['format']['properties'])
+        self.assertFalse(payload['stream'])
+        with self.assertRaises(ValueError):
+            ollama_request(dict(record(), extra_field='forbidden'), cfg, 'x')
+
+    def test_strip_code_fence_removes_single_fence_only(self):
+        self.assertEqual(strip_code_fence('```json\n{"a": 1}\n```'), '{"a": 1}')
+        self.assertEqual(strip_code_fence('{"a": 1}'), '{"a": 1}')
+        self.assertEqual(strip_code_fence('```\n{"a": 1}\n```'), '{"a": 1}')
+
+    def test_ollama_real_adapter_contract_with_mock_transport(self):
+        class Response:
+            def __enter__(self): return self
+            def __exit__(self, *args): pass
+            def read(self):
+                return dumps({'done': True, 'model': 'gemma4:e4b',
+                    'message': {'role': 'assistant', 'content': dumps(alignment())},
+                    'eval_count': 5, 'eval_duration': 1000, 'load_duration': 0, 'total_duration': 1000}).encode()
+        cfg = {'model': 'gemma4:e4b', 'host': 'http://localhost:11434', 'temperature': 0, 'seed': 1}
+        with patch('urllib.request.urlopen', return_value=Response()) as request:
+            translated, structured, metadata = OllamaArm(cfg, 'Generic instructions').translate(record())
+        self.assertEqual(translated, alignment()['translation'])
+        self.assertEqual(metadata['actual_model'], 'gemma4:e4b')
+        sent = json.loads(request.call_args.args[0].data)
+        self.assertEqual(json.loads(sent['messages'][1]['content']), record())
+        self.assertEqual(request.call_args.args[0].full_url, 'http://localhost:11434/api/chat')
+
+    def test_ollama_malformed_output_is_a_status_not_a_crash_or_repair(self):
+        class Response:
+            def __enter__(self): return self
+            def __exit__(self, *args): pass
+            def read(self):
+                return dumps({'done': True, 'model': 'gemma4:e4b',
+                              'message': {'role': 'assistant', 'content': 'not json at all'}}).encode()
+        cfg = {'model': 'gemma4:e4b', 'host': 'http://localhost:11434', 'temperature': 0, 'seed': 1}
+        with patch('urllib.request.urlopen', return_value=Response()):
+            with self.assertRaises(ProviderFailure) as ctx:
+                OllamaArm(cfg, 'x').translate(record())
+        self.assertEqual(ctx.exception.code, 'MALFORMED_STRUCTURED_OUTPUT')
 
     def test_google_request_contract_no_glossary(self):
         class Translation:

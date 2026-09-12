@@ -8,7 +8,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 EXPERIMENT = ROOT / 'experiments/spatial_translation_bakeoff'
 BLIND_FIELDS = ['dataset_record_id', 'tweet_id', 'tweet_url', 'text_original']
-SYSTEMS = ('indictrans2', 'google', 'openai')
+SYSTEMS = ('indictrans2', 'google', 'openai', 'ollama')
+# Arms that return a self-reported structured alignment alongside the translation.
+STRUCTURED_SYSTEMS = ('openai', 'ollama')
 
 
 def now():

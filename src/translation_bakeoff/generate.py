@@ -12,7 +12,7 @@ import re
 import sys
 import time
 from pathlib import Path
-from .common import (ROOT, EXPERIMENT, SYSTEMS, now, dumps, sha, file_sha, load_blind,
+from .common import (ROOT, EXPERIMENT, SYSTEMS, STRUCTURED_SYSTEMS, now, dumps, sha, file_sha, load_blind,
                      smoke_sample, write_csv_once, write_json_once, write_text_once)
 from .adapters import ARMS, preflight, ProviderFailure
 from .schema import SCHEMA
@@ -78,7 +78,7 @@ def candidate_rows(records, system, config, adapter, blocked, run_id, input_hash
         events.append({'dataset_record_id': record['dataset_record_id'], 'event_timestamp': now(),
                        'attempt_number': 1 if attempted else 0, 'status': status,
                        'error_code': error, 'metadata': metadata, 'runtime_seconds': elapsed})
-        if system == 'openai':
+        if system in STRUCTURED_SYSTEMS:
             aligned.append({'dataset_record_id': record['dataset_record_id'],
                             'generation_status': status, 'alignment': structured, 'metadata': metadata})
     return rows, events, aligned
@@ -88,7 +88,7 @@ def save_phase(directory, records, system, config, adapter, blocked, run_id, inp
     rows, events, aligned = candidate_rows(records, system, config, adapter, blocked, run_id, input_hash)
     write_csv_once(directory / 'candidates.csv', rows)
     write_text_once(directory / 'requests.jsonl', ''.join(dumps(e) + '\n' for e in events))
-    if system == 'openai':
+    if system in STRUCTURED_SYSTEMS:
         write_text_once(directory / 'alignment.jsonl', ''.join(dumps(e) + '\n' for e in aligned))
     return rows
 
@@ -104,7 +104,12 @@ def run(run_id, experiment=EXPERIMENT):
         raise ValueError('This harness uses exactly one logged attempt; no hidden retries')
     project_var = config['systems']['google']['project_environment_variable']
     config['systems']['google']['project'] = config['systems']['google']['project'] or os.getenv(project_var)
-    prompt = (experiment / 'prompts/openai_spatial_translation.txt').read_text(encoding='utf-8')
+    # Each system that actually consumes prompt text has its own file; arms that
+    # ignore the prompt (Google, IndicTrans2) still get one so every system has a
+    # frozen, hashed prompt artifact.
+    prompt_files = {'ollama': 'prompts/ollama_spatial_translation.txt'}
+    prompts = {system: (experiment / prompt_files.get(system, 'prompts/openai_spatial_translation.txt')
+                        ).read_text(encoding='utf-8') for system in SYSTEMS}
     records = load_blind(experiment / 'blind_translation_input.csv')
     input_hash = file_sha(experiment / 'blind_translation_input.csv')
     sample = smoke_sample(records, config['smoke_seed'])
@@ -122,27 +127,39 @@ def run(run_id, experiment=EXPERIMENT):
         adapter = None
         if not blocked:
             try:
-                adapter = ARMS[system](cfg, prompt)
+                adapter = ARMS[system](cfg, prompts[system])
             except Exception as exc:
                 blocked.append('INITIALIZATION_FAILED_' + type(exc).__name__)
         base = experiment / 'runs' / system / run_id
         smoke_rows = save_phase(base / 'smoke', sample, system, cfg, adapter, blocked,
                                 run_id, input_hash)
         failures = sum(r['generation_status'] != 'SUCCESS' for r in smoke_rows)
+        # A tolerance is only honored if the system's own config declares one, with a
+        # reason recorded alongside it: this is for a free/best-effort backend with no
+        # SLA where some transient failure rate is expected, never a silent way to widen
+        # an SLA-backed arm's bar. Full-run per-record failures still show up honestly
+        # in candidates.csv/metrics regardless of this gate.
+        tolerance = cfg.get('smoke_failure_tolerance', 0) if not blocked else 0
+        failure_rate = failures / len(sample) if sample else 0
+        within_tolerance = failures > 0 and tolerance > 0 and failure_rate <= tolerance
+        gate = ('BLOCKED' if blocked else 'PASS' if failures == 0 else
+                'PASS_BEST_EFFORT' if within_tolerance else 'FAIL')
         smoke[system] = {'selected_records': len(sample), 'successful': len(sample) - failures,
-                         'technical_gate': 'PASS' if failures == 0 else 'BLOCKED' if blocked else 'FAIL',
-                         'blockers': blocked, 'audit_labels_inspected': False}
-        if failures and not blocked:
+                         'failure_rate': round(failure_rate, 3), 'smoke_failure_tolerance': tolerance,
+                         'smoke_tolerance_reason': cfg.get('smoke_tolerance_reason', '') if tolerance else '',
+                         'technical_gate': gate, 'blockers': blocked, 'audit_labels_inspected': False}
+        if failures and not blocked and gate == 'FAIL':
             blocked = ['FULL_RUN_NOT_STARTED_SMOKE_TECHNICAL_FAILURE']
         adapters[system], blockers[system] = adapter, blocked
         print(system + ': smoke ' + smoke[system]['technical_gate'], flush=True)
     # No semantic tuning: freeze after the common smoke gate, including blocked gates.
     write_json_once(run_root / 'smoke_report.json', smoke)
     write_json_once(run_root / 'frozen_config.json', config)
-    write_text_once(run_root / 'frozen_prompt.txt', prompt)
+    for system, prompt_text in prompts.items():
+        write_text_once(run_root / f'frozen_prompt_{system}.txt', prompt_text)
     write_json_once(run_root / 'config_freeze.json', {
         'frozen_at': now(), 'configuration_sha256': file_sha(run_root / 'frozen_config.json'),
-        'prompt_sha256': file_sha(run_root / 'frozen_prompt.txt'),
+        'prompt_sha256': {system: file_sha(run_root / f'frozen_prompt_{system}.txt') for system in SYSTEMS},
         'schema_sha256': file_sha(run_root / 'schema.json'), 'input_sha256': input_hash,
         'smoke_integration_proven': {s: smoke[s]['technical_gate'] == 'PASS' for s in SYSTEMS},
         'prompt_tuning_after_smoke': False})

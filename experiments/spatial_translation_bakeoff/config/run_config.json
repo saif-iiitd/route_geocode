@@ -29,6 +29,17 @@
       "temperature": null,
       "seed": null,
       "determinism_note": "No determinism guarantee. Omit unsupported temperature/seed rather than silently retry with changed settings."
+    },
+    "ollama": {
+      "model": "gemma4:e4b",
+      "host": "http://localhost:11434",
+      "api": "Ollama local /api/chat, format=JSON schema (server-enforced)",
+      "temperature": 0,
+      "seed": 20260912,
+      "timeout_seconds": 300,
+      "keep_alive": "30m",
+      "determinism_note": "temperature=0 and a fixed seed are passed; llama.cpp-backed determinism is best-effort, not guaranteed, and is tied to this exact local build/hardware.",
+      "cost_note": "Fully local; no billing, no external network call, no rate limit. Requires the model already pulled via 'ollama pull gemma4:e4b' and the Ollama server running on this host."
     }
   }
 }

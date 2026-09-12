@@ -1,0 +1,44 @@
+{
+  "experiment_version": "blind-spatial-v1",
+  "retries": 0,
+  "smoke_seed": 20260912,
+  "smoke_size": 20,
+  "systems": {
+    "google": {
+      "glossary": null,
+      "location": "global",
+      "model": "general/nmt",
+      "project": null,
+      "project_environment_variable": "GOOGLE_CLOUD_PROJECT",
+      "service": "Cloud Translation Advanced v3"
+    },
+    "huggingface": {
+      "api": "huggingface_hub.InferenceClient.chat_completion, auto-routed Hugging Face Inference Providers, free tier",
+      "cost_note": "Free tier under the account's own Hugging Face token; no billing configured.",
+      "determinism_note": "Temperature/seed are accepted by the client but the serving backend is auto-routed and not exposed by the API; determinism is not guaranteed across requests or over time.",
+      "max_tokens": 800,
+      "model": "meta-llama/Llama-3.1-8B-Instruct",
+      "request_interval_seconds": 1.5,
+      "seed": 20260912,
+      "temperature": 0
+    },
+    "indictrans2": {
+      "device": "cpu",
+      "max_new_tokens": 256,
+      "max_source_tokens": 256,
+      "model": "ai4bharat/indictrans2-indic-en-1B",
+      "num_beams": 5,
+      "revision": "ac3daf0ecd37be3b6957764a9179ab2b07fa9d6a",
+      "seed": 20260912
+    },
+    "openai": {
+      "api": "Responses v1",
+      "determinism_note": "No determinism guarantee. Omit unsupported temperature/seed rather than silently retry with changed settings.",
+      "max_output_tokens": 8192,
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "low",
+      "seed": null,
+      "temperature": null
+    }
+  }
+}

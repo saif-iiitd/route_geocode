@@ -1,0 +1,38 @@
+{
+  "google": {
+    "audit_labels_inspected": false,
+    "blockers": [
+      "GOOGLE_CLOUD_TRANSLATE_LIBRARY_NOT_INSTALLED",
+      "GOOGLE_CLOUD_PROJECT_NOT_CONFIGURED",
+      "GOOGLE_ADC_NOT_CONFIGURED_ON_THIS_LOCAL_HOST"
+    ],
+    "selected_records": 20,
+    "successful": 0,
+    "technical_gate": "BLOCKED"
+  },
+  "huggingface": {
+    "audit_labels_inspected": false,
+    "blockers": [],
+    "selected_records": 20,
+    "successful": 13,
+    "technical_gate": "FAIL"
+  },
+  "indictrans2": {
+    "audit_labels_inspected": false,
+    "blockers": [
+      "MISSING_DEPENDENCY_IndicTransToolkit"
+    ],
+    "selected_records": 20,
+    "successful": 0,
+    "technical_gate": "BLOCKED"
+  },
+  "openai": {
+    "audit_labels_inspected": false,
+    "blockers": [
+      "OPENAI_API_KEY_NOT_CONFIGURED"
+    ],
+    "selected_records": 20,
+    "successful": 0,
+    "technical_gate": "BLOCKED"
+  }
+}

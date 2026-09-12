@@ -3,7 +3,7 @@ import argparse
 import json
 from collections import Counter
 from pathlib import Path
-from .common import (ROOT, EXPERIMENT, SYSTEMS, verify_freeze, file_sha, read_csv,
+from .common import (ROOT, EXPERIMENT, SYSTEMS, STRUCTURED_SYSTEMS, verify_freeze, file_sha, read_csv,
                      load_blind, write_csv_once, write_json_once, write_text_once, dumps, now)
 from .validate import screen
 
@@ -86,22 +86,25 @@ def evaluate(run_id, root=ROOT, experiment=EXPERIMENT):
                 raise ValueError('Frozen candidate identity/input mismatch')
         candidates[system] = index
     audit = join_audit(blind, read_csv(root / 'results/translation_discrepancies.csv'))
-    alignment_path = experiment / 'runs/openai' / run_id / 'alignment.jsonl'
     alignments = {}
-    for line in alignment_path.read_text(encoding='utf-8').splitlines():
-        item = json.loads(line)
-        if item['dataset_record_id'] in alignments:
-            raise ValueError('Duplicate OpenAI alignment identity')
-        alignments[item['dataset_record_id']] = item['alignment']
-    if set(alignments) != {r['dataset_record_id'] for r in blind}:
-        raise ValueError('OpenAI alignment coverage mismatch')
+    for system in STRUCTURED_SYSTEMS:
+        alignment_path = experiment / 'runs' / system / run_id / 'alignment.jsonl'
+        by_record = {}
+        for line in alignment_path.read_text(encoding='utf-8').splitlines():
+            item = json.loads(line)
+            if item['dataset_record_id'] in by_record:
+                raise ValueError('Duplicate ' + system + ' alignment identity')
+            by_record[item['dataset_record_id']] = item['alignment']
+        if set(by_record) != {r['dataset_record_id'] for r in blind}:
+            raise ValueError(system + ' alignment coverage mismatch')
+        alignments[system] = by_record
     validation, regression, metrics, subsets = [], [], [], []
     for system in SYSTEMS:
         system_validation = []
         for record in blind:
             key = record['dataset_record_id']
             candidate, evidence = candidates[system][key], audit[key]
-            result = screen(record['text_original'], candidate, alignments[key] if system == 'openai' else None)
+            result = screen(record['text_original'], candidate, alignments[system][key] if system in STRUCTURED_SYSTEMS else None)
             result['flags'] = dumps(result['flags'])
             row = {'dataset_record_id': key, 'tweet_id': record['tweet_id'], 'system': system,
                    'run_id': run_id, 'generation_status': candidate['generation_status'],
@@ -138,7 +141,7 @@ def evaluate(run_id, root=ROOT, experiment=EXPERIMENT):
             'known_severe_failures_fixed_of_77': 'NA', 'known_severe_still_failing': 'NA',
             'known_severe_not_adjudicated': 77,
             'average_runtime_seconds_per_attempt': round(sum(elapsed) / len(elapsed), 6) if elapsed else 'NA',
-            'approximate_api_cost_usd': 0 if not attempted else 'NA_SEE_REQUEST_USAGE',
+            'approximate_api_cost_usd': 0 if not attempted or system == 'ollama' else 'NA_SEE_REQUEST_USAGE',
             'metric_denominator': 'successful candidates for screen percentages; semantic rates require adjudicated gold',
             'environment_metadata': f'runs/{run_id}/environment.json',
             'candidate_file_sha256': file_sha(experiment / 'runs' / system / run_id / 'candidates.csv')})
@@ -192,7 +195,7 @@ Quality rates and severe-failure repair rates are NA when unmeasured, not zero-e
 
 The representative table contains {len(representatives)} post-reveal selections covering documented failure families. Empty candidate columns explicitly mean unavailable generation. No cross-system disagreements or successes can be inferred from empty cells. These are review cases, not evidence of comparative quality.
 
-Validation uses transparent Hindi/English cue screens for selected relations, features, numeric/time tokens, negation, status and residual Devanagari. Cue mismatch means possible discrepancy. Cross-script place identity, added/missing places, mention ordering, reversals and route-clause equivalence require independent bilingual review. Self-reported OpenAI alignment is not gold. No record receives AUTO_VALIDATED solely because heuristic checks are quiet. Incomplete audit toponym hints are joined only as QA evidence after freezing and are never treated as exhaustive annotations.
+Validation uses transparent Hindi/English cue screens for selected relations, features, numeric/time tokens, negation, status and residual Devanagari. Cue mismatch means possible discrepancy. Cross-script place identity, added/missing places, mention ordering, reversals and route-clause equivalence require independent bilingual review. Self-reported structured alignment (OpenAI, Hugging Face) is not gold; it only tests a candidate against its own claimed mentions. No record receives AUTO_VALIDATED solely because heuristic checks are quiet. Incomplete audit toponym hints are joined only as QA evidence after freezing and are never treated as exhaustive annotations.
 
 ## Recommendations
 
@@ -204,7 +207,7 @@ Validation uses transparent Hindi/English cue screens for selected relations, fe
 
 ## Reproducibility
 
-Blind input SHA-256: `{frozen['input_sha256']}`. Source commit: `{manifest['source_commit']}`; working tree was dirty from the prior authorized task. The run snapshots generator source, schema, resolved configuration, prompt and library/Python versions. `freeze.json` hashes every frozen run artifact, including candidate CSVs and OpenAI alignment JSONL. Per-row output_sha256 hashes the UTF-8 translation, not the containing CSV. Missing outputs have empty output hashes. Timestamps are UTC; no timestamps are invented for unattempted generation.
+Blind input SHA-256: `{frozen['input_sha256']}`. Source commit: `{manifest['source_commit']}`; working tree was dirty from the prior authorized task. The run snapshots generator source, schema, resolved configuration, prompt and library/Python versions. `freeze.json` hashes every frozen run artifact, including candidate CSVs and the OpenAI/Hugging Face alignment JSONL files. Per-row output_sha256 hashes the UTF-8 translation, not the containing CSV. Missing outputs have empty output hashes. Timestamps are UTC; no timestamps are invented for unattempted generation.
 
 Protected source/audit/canonical/queue hashes matched preparation at reveal. Python generation denies reads from repository data/docs/results directories; adapters receive only the four-field blind record and cannot request tools. This enforces input/pipeline blinding, not personnel blinding: the implementing assistant had prior audit context. The prompt contains generic fidelity rules, no corpus-specific corrected examples. Evaluation output never flows back into generation. Repeating serialization is deterministic; external service model outputs are not guaranteed deterministic. IndicTrans2 fixes revision/seed/beam decoding but hardware/library reproducibility still matters.
 

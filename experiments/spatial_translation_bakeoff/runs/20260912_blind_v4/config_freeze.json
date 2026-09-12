@@ -1,0 +1,19 @@
+{
+  "configuration_sha256": "7512c2f8da68f2b9395c899b9bab7fcf86ee7f1917f71e75ebe3363e996b5154",
+  "frozen_at": "2026-09-12T07:24:11.437581+00:00",
+  "input_sha256": "8d8f5fcab9e03c6a1dfc90d5a2bfc7a3f92959df7f202b8e9bd65a169f2d9337",
+  "prompt_sha256": {
+    "google": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39",
+    "huggingface": "65650474ecb53a01e2370546f6c0527b2c6c747c511cc63dbda035d7d1bcb068",
+    "indictrans2": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39",
+    "openai": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39"
+  },
+  "prompt_tuning_after_smoke": false,
+  "schema_sha256": "a7be81fcd635e0c170f5c803fe65d0305ae0881d4e76c2456f5400b0e636d558",
+  "smoke_integration_proven": {
+    "google": false,
+    "huggingface": false,
+    "indictrans2": false,
+    "openai": false
+  }
+}

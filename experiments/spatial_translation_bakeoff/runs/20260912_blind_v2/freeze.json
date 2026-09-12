@@ -1,0 +1,70 @@
+{
+  "blocked_systems": {
+    "google": [
+      "GOOGLE_CLOUD_TRANSLATE_LIBRARY_NOT_INSTALLED",
+      "GOOGLE_CLOUD_PROJECT_NOT_CONFIGURED",
+      "GOOGLE_ADC_NOT_CONFIGURED_ON_THIS_LOCAL_HOST"
+    ],
+    "huggingface": [
+      "FULL_RUN_NOT_STARTED_SMOKE_TECHNICAL_FAILURE"
+    ],
+    "indictrans2": [
+      "MISSING_DEPENDENCY_IndicTransToolkit"
+    ],
+    "openai": [
+      "OPENAI_API_KEY_NOT_CONFIGURED"
+    ]
+  },
+  "candidate_generation_closed": true,
+  "files": {
+    "blind_translation_input.csv": "8d8f5fcab9e03c6a1dfc90d5a2bfc7a3f92959df7f202b8e9bd65a169f2d9337",
+    "runs/20260912_blind_v2/config_freeze.json": "ec76d924bd616a3d8e2104747494945fa21abd2f7167fc823fea16997725c8cd",
+    "runs/20260912_blind_v2/environment.json": "3ddffdffe7e43c6c32021a39058966d079a1f43144c49b36590857a22589681c",
+    "runs/20260912_blind_v2/frozen_config.json": "80cfe9a9ddcc25a897d5312e9b52a4df53bb2495972ece01fe94d288c67879bf",
+    "runs/20260912_blind_v2/frozen_prompt_google.txt": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39",
+    "runs/20260912_blind_v2/frozen_prompt_huggingface.txt": "270748ee331940d14757987c0ef1d73f2cec2395be52a28f778686d8718d4662",
+    "runs/20260912_blind_v2/frozen_prompt_indictrans2.txt": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39",
+    "runs/20260912_blind_v2/frozen_prompt_openai.txt": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39",
+    "runs/20260912_blind_v2/schema.json": "a7be81fcd635e0c170f5c803fe65d0305ae0881d4e76c2456f5400b0e636d558",
+    "runs/20260912_blind_v2/smoke_input.csv": "9de1a0f16e21edbc2a37caf8f6a7c261e94e58251e3271f4a6056b1a836368e4",
+    "runs/20260912_blind_v2/smoke_report.json": "1c535e73ff6ac24b75de55793a48db3428f9ae2a3833c0aa4bb1fb66b50d6fd7",
+    "runs/20260912_blind_v2/source/__init__.py": "5b920deadd20c9f06984c928e5284cb19a9327c599ac541b288277f4cc45fa72",
+    "runs/20260912_blind_v2/source/adapters.py": "1fa219542dce539970c2658834bf50b3f7b567002b5540c98febd9dfb258ebfe",
+    "runs/20260912_blind_v2/source/common.py": "2a67c85a6a1e79583d3fed7a6bb7ea6837afd793be46cf0898aef8f53289b443",
+    "runs/20260912_blind_v2/source/evaluate.py": "c061164b5859333bea31e36056a2bf1161345c13b3b7c2974b4e0d1fbc446497",
+    "runs/20260912_blind_v2/source/generate.py": "9e4d7098b4f29f25d659873e16077a49a2bef6603ab3bd08f897eb5d9f467f47",
+    "runs/20260912_blind_v2/source/prepare.py": "775a7975f0e11a39a0de3e133aa1b6d758e41d3c96c2205d150185437785797f",
+    "runs/20260912_blind_v2/source/schema.py": "c013a310d7aac9ef990012bf6831e349d808b5271596d7fc7a9d85e7bfc776a6",
+    "runs/20260912_blind_v2/source/validate.py": "e5ba713d267f4d38d3661d54d6d5d7d1700667260e41b847492de459cd5c5083",
+    "runs/google/20260912_blind_v2/candidates.csv": "ae5a0feca0a4239342a898622d80b6d39d4793d6c45ab897e5ba6fa5b928dd9a",
+    "runs/google/20260912_blind_v2/requests.jsonl": "10edbf80649910d0cd400baa78c1b5d314817f4e559e86835089c32054e9ad20",
+    "runs/google/20260912_blind_v2/smoke/candidates.csv": "1eae3ac516ac61fe445b823ac8e3b95c7b2d30ac37c36cd27cf1927c7c4db106",
+    "runs/google/20260912_blind_v2/smoke/requests.jsonl": "66799b264aac793dd582e43fdc04d0608532cf267702b5957898ce68ab2f8264",
+    "runs/huggingface/20260912_blind_v2/alignment.jsonl": "d56aec78ed203ef93742c2f84d8f2b01431dd208115f6e67d39b3d08798072e8",
+    "runs/huggingface/20260912_blind_v2/candidates.csv": "6e0b75fae7bc90e7be2f5a7eba82ce8ee6e39eb36d1053006041e91de055efc2",
+    "runs/huggingface/20260912_blind_v2/requests.jsonl": "3ff1f195e9932612f0108b6563e66a3b5eb56ce572e0b72cde5c195053100626",
+    "runs/huggingface/20260912_blind_v2/smoke/alignment.jsonl": "786b317cfbee7bf907e9a562e0963acc37d88d391a4e0d34aff1165013614001",
+    "runs/huggingface/20260912_blind_v2/smoke/candidates.csv": "5e5b06d7c54723ce690fabcc6cbb1a1944ae616416d4c28d8dd1e20869bb9a3d",
+    "runs/huggingface/20260912_blind_v2/smoke/requests.jsonl": "c58efc51ecf0e662d3555e67b3140b420ea0d7e1540f3e6ecd9da9c13cabf025",
+    "runs/indictrans2/20260912_blind_v2/candidates.csv": "8a30f0c1cbc80b52cdc6df14573d098bd33003d79a0ad76744eeb031bcc442ce",
+    "runs/indictrans2/20260912_blind_v2/requests.jsonl": "d1b9035a9c3c9a4236b5b0be26e7c04ac509c39bc931cd269ca3e32d6982c203",
+    "runs/indictrans2/20260912_blind_v2/smoke/candidates.csv": "c584f0f9f55fa0a37a4865a81c5712cad243bdd2e1aa652f3c9d09aaba9b9d82",
+    "runs/indictrans2/20260912_blind_v2/smoke/requests.jsonl": "a283c70586cf5b3bd17c9aefad98ce31ba3433b0cfd69fa29e155be1c4de00ae",
+    "runs/openai/20260912_blind_v2/alignment.jsonl": "d56aec78ed203ef93742c2f84d8f2b01431dd208115f6e67d39b3d08798072e8",
+    "runs/openai/20260912_blind_v2/candidates.csv": "1094aa7f371c44348fe7a17a38cc143b4fd644294b7ccb815d9650ce0d03ca0d",
+    "runs/openai/20260912_blind_v2/requests.jsonl": "31ab0fdc0235b104ca067b346d6eeeb1052d9b21dfe4472a534e36cac08743f3",
+    "runs/openai/20260912_blind_v2/smoke/alignment.jsonl": "3b5b765227f1cd3c41b47053ede744d94193e45159cd3e9ccb9e4aeb81d3f6ad",
+    "runs/openai/20260912_blind_v2/smoke/candidates.csv": "e813a83f5067cb79b283de7c0475472ad6c78310993eb5b29f96e5ce2197c598",
+    "runs/openai/20260912_blind_v2/smoke/requests.jsonl": "89231f77f3e2f8e567bdd264413235549e52122fc5edf51bd1f5ad81b714919f"
+  },
+  "frozen_at": "2026-09-12T07:15:18.191878+00:00",
+  "input_sha256": "8d8f5fcab9e03c6a1dfc90d5a2bfc7a3f92959df7f202b8e9bd65a169f2d9337",
+  "quality_comparison_available": false,
+  "run_id": "20260912_blind_v2",
+  "systems": [
+    "indictrans2",
+    "google",
+    "openai",
+    "huggingface"
+  ]
+}

@@ -1,10 +1,11 @@
 # Blind Hindi → English spatial translation experiment
 
-This isolated experiment compares IndicTrans2, Google Cloud Translation Advanced v3
-and OpenAI GPT-5.6 Sol. It never writes production parser input. The requested
-translation run is blocked until provider credentials/dependencies are available;
-status artifacts are not substitute translations. See the generated report for the
-actual outcome and per-provider blockers.
+This isolated experiment compares IndicTrans2, Google Cloud Translation Advanced v3,
+OpenAI GPT-5.6 Sol and a local Ollama arm (an open-weight instruct model served from
+this machine). It never writes production parser input. Any arm without configured
+credentials/dependencies/reachable server is blocked at preflight; status artifacts
+are not substitute translations. See the generated report for the actual outcome and
+per-provider blockers.
 
 ## Pipeline and reruns
 
@@ -108,6 +109,30 @@ and [structured outputs](https://developers.openai.com/api/docs/guides/structure
 Never put keys in config, CLI literals, markdown or CSVs. Provider exceptions are
 logged by safe error code/type only, not raw body text. There are no hidden retries.
 
+## Enable Ollama (local, free)
+
+Requested model: `gemma4:e4b`, served from a local Ollama installation
+(`http://localhost:11434` by default). No billing, no external network call, no rate
+limit — this arm is fully offline once the model is pulled (`ollama pull gemma4:e4b`)
+and the Ollama server is running. Preflight checks the server is reachable and the
+model is present in `ollama list`/`/api/tags`; it does not pull the model or start the
+server automatically.
+
+Unlike the free Hugging Face routing this replaced (dropped for unresolved
+intermittent free-tier failures — see `runs/huggingface/20260912_blind_v{1,2,3,4}`
+for that evidence trail), Ollama enforces the JSON schema server-side via
+`format=<schema>` on `/api/chat`, the same guarantee OpenAI's Responses API gives.
+A malformed response here therefore indicates a genuine model/prompt problem, not
+free-tier flakiness — and it is still reported as `MALFORMED_STRUCTURED_OUTPUT`,
+never silently repaired, retried or defaulted. The adapter still tolerates a single
+wrapping markdown code fence defensively.
+
+`temperature=0` and a fixed `seed` are passed, but llama.cpp-backed determinism is
+best-effort, not guaranteed, and is tied to this exact local build/hardware — a
+different machine or Ollama version can change outputs. `keep_alive=30m` keeps the
+model loaded in memory across the run rather than reloading it per request. Cost is
+$0; this is recorded directly rather than left as `NA_SEE_REQUEST_USAGE`.
+
 ## Evaluation interpretation
 
 The 77/104/57/548/29 legacy subsets are regression/review strata, not exhaustive gold
@@ -116,7 +141,7 @@ least 20 illustrative cases happens only after the freeze and audit reveal.
 
 Automatic screens flag possible numeric/time, relation, feature, negation/status
 and residual-script discrepancies. Missing cue words are not proven semantic errors.
-OpenAI self-alignment can reveal an internal mention-order/count inconsistency but
+OpenAI/Ollama self-alignment can reveal an internal mention-order/count inconsistency but
 cannot independently establish correctness. Place identity, additions/drops, direction
 and route-clause equivalence require bilingual adjudication. Quiet heuristics never
 earn AUTO_VALIDATED. Severe regression classifications remain uncertain until evidence

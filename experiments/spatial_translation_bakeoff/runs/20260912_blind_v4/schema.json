@@ -1,0 +1,89 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "place_mentions": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "english_surface": {
+            "type": "string"
+          },
+          "feature_type": {
+            "type": "string"
+          },
+          "mention_order": {
+            "type": "integer"
+          },
+          "original_surface": {
+            "type": "string"
+          },
+          "uncertain": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "original_surface",
+          "english_surface",
+          "mention_order",
+          "feature_type",
+          "uncertain"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "route_clause_count": {
+      "type": "integer"
+    },
+    "spatial_relations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "relation": {
+            "type": "string"
+          },
+          "source_mention_order": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "target_mention_order": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "uncertain": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "relation",
+          "source_mention_order",
+          "target_mention_order",
+          "uncertain"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "translation": {
+      "type": "string"
+    },
+    "translation_uncertainties": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    }
+  },
+  "required": [
+    "translation",
+    "place_mentions",
+    "spatial_relations",
+    "route_clause_count",
+    "translation_uncertainties"
+  ],
+  "type": "object"
+}
