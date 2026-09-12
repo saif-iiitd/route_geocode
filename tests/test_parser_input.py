@@ -11,7 +11,7 @@ from pathlib import Path
 from unittest.mock import patch
 
 from src import text_provenance as provenance
-from src.parser_input import build_records, canonical_record, normalize_original, summary
+from src.parser_input import build_records, canonical_record, normalize_original, summary, translation_queue, validate_counts, EXPECTED_COUNTS
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -44,7 +44,7 @@ class ParserInputTests(unittest.TestCase):
             before = copy.deepcopy(row)
             record = canonical_record(row, audit, evidence, self.fingerprints)
             self.assertEqual(row, before)
-            if record['parser_status'] == 'READY':
+            if record['parser_status'] == 'READY_ORIGINAL_EN':
                 self.assertEqual(record['text_for_parser'], normalize_original(row['text']))
                 poisoned = dict(row, translated_text='WRONG PLACE via WRONG ROAD', address='OTHER PLACE')
                 self.assertEqual(canonical_record(poisoned, audit, evidence, self.fingerprints)['text_for_parser'],
@@ -57,7 +57,7 @@ class ParserInputTests(unittest.TestCase):
     def test_jail_road_legacy_quarantined_original_ready(self):
         record = self.by_id['549389894830030848']
         self.assertEqual(record['text_for_parser'], 'Traffic is now normal at Jail Road towards Hari Nagar.')
-        self.assertEqual(record['parser_status'], 'READY')
+        self.assertEqual(record['parser_status'], 'READY_ORIGINAL_EN')
         self.assertEqual(record['legacy_translation_status'], 'QUARANTINED')
         self.assertIn('LEGACY_JAIL_ROAD_TILAK_NAGAR_SUBSTITUTION', record['data_quality_flags'])
 
@@ -73,24 +73,37 @@ class ParserInputTests(unittest.TestCase):
         self.assertIn('Shastri Park', record['text_from_verified_source'])
         self.assertIn('LEGACY_TRANSLATION_PREVIOUS_ROW_CONTAMINATION', record['data_quality_flags'])
         for record in (record, next(r for r in self.records if not r['tweet_id'])):
-            self.assertEqual(record['parser_status'], 'QUARANTINED')
-            self.assertEqual(record['text_for_parser'], '')
+            self.assertIn(record['parser_status'], ('SOURCE_REPAIR_REQUIRED', 'QUARANTINE_SOURCE_CORRUPTION'))
+            self.assertIsNone(record['text_for_parser'])
         spill = next(r for r in self.records if not r['tweet_id'])
         self.assertIn('SOURCE_FIELD_SPILL', spill['data_quality_flags'])
         self.assertTrue(json.loads(spill['existing_location_metadata'])['geo'])
 
     def test_non_english_has_no_implicit_translation(self):
         for record in self.records:
-            if record['language_original'] != 'en':
+            if record['language_original'] == 'hi':
                 self.assertTrue(record['translation_required'])
                 self.assertIn('PARSER_TRANSLATION_REQUIRED', record['data_quality_flags'])
-                self.assertEqual(record['text_for_parser'], '')
-                self.assertEqual(record['text_translated'], '')
+                self.assertIsNone(record['text_for_parser'])
+                self.assertEqual(record['text_translated_approved'], '')
                 self.assertEqual(record['protected_mentions_status'], 'NOT_ANNOTATED')
         counts = summary(self.records)
-        self.assertEqual(counts['parser_status'], {'READY': 4327, 'QUARANTINED': 2,
-                                                 'PARSER_TRANSLATION_REQUIRED': 815})
-        self.assertEqual(counts['translation_required_including_quarantined'], 816)
+        self.assertEqual(counts['parser_status'], EXPECTED_COUNTS)
+
+    def test_queue_and_audit_preservation(self):
+        queue = translation_queue(self.records)
+        self.assertEqual(len(queue), 815)
+        for record, (_, audit, _) in zip(self.records, self.bound):
+            self.assertEqual(json.loads(record['audit_evidence']), audit)
+            for key, value in audit.items():
+                self.assertEqual(record[key], value)
+            if record['language_recorded'] == 'id':
+                self.assertEqual(record['parser_status'], 'LANGUAGE_REVIEW')
+                self.assertEqual(record['language_original'], 'id')
+        self.assertEqual({r['dataset_record_id'] for r in queue},
+                         {r['dataset_record_id'] for r in self.records if r['parser_status'] == 'NEEDS_APPROVED_TRANSLATION'})
+        with self.assertRaisesRegex(ValueError, 'reconciliation'):
+            validate_counts(self.records[:-1])
 
     def test_all_audit_severe_and_unresolved_are_flagged(self):
         for record in self.records:
@@ -121,15 +134,16 @@ class ParserInputTests(unittest.TestCase):
                 build_records(ROOT)
 
     def test_clean_processes_are_byte_identical_and_sources_unchanged(self):
-        paths = list((ROOT / 'Data').glob('*')) + list(ROOT.glob('*.ipynb')) + list(ROOT.glob('*.docx')) + list(ROOT.glob('*.xlsx'))
+        paths = list((ROOT / 'docs').glob('*')) + list((ROOT / 'results/provenance_audit').glob('*')) + [ROOT / 'results/translation_discrepancies.csv'] + list((ROOT / 'Data').glob('*')) + list(ROOT.glob('*.ipynb')) + list(ROOT.glob('*.docx')) + list(ROOT.glob('*.xlsx'))
         before = {p: provenance.digest(p) for p in paths if p.is_file()}
         with tempfile.TemporaryDirectory() as folder:
             outputs = [Path(folder) / f'canonical-{n}.csv' for n in range(2)]
             for output in outputs:
-                subprocess.run([sys.executable, '-B', '-m', 'src.parser_input', '--output', str(output)],
+                subprocess.run([sys.executable, '-B', '-m', 'src.parser_input', '--output', str(output), '--queue-output', str(output.with_suffix('.queue.csv'))],
                                cwd=ROOT, check=True, capture_output=True,
                                env=dict(os.environ, PYTHONDONTWRITEBYTECODE='1'))
             self.assertEqual(outputs[0].read_bytes(), outputs[1].read_bytes())
+            self.assertEqual(outputs[0].with_suffix('.queue.csv').read_bytes(), outputs[1].with_suffix('.queue.csv').read_bytes())
             with outputs[0].open(encoding='utf-8', newline='') as stream:
                 reread = list(csv.DictReader(stream))
             self.assertEqual(reread[0]['tweet_id'], '549389894830030848')

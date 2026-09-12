@@ -1,0 +1,11 @@
+{
+  "candidate_freeze_verified": true,
+  "checked_at": "2026-09-12T01:21:49.525771+00:00",
+  "extended_table_sha256": "abc196854afa6ec5d18bea5733466c76d023ce28994f96385e945c349e690390",
+  "google_key_check": "Supplied file is an API key, not Advanced v3 OAuth credential. Secret was not copied, logged, or transmitted.",
+  "protected_files_unchanged": 47,
+  "representative_cases_extended": 21,
+  "supplement_selection": "Post-freeze source inspection for explicit multiple diversion clauses; no generation changes",
+  "test_runtime_seconds": 26.81,
+  "tests_passed": 24
+}

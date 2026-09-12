@@ -78,7 +78,7 @@ def load_bound_records(root):
             raise ValueError('Duplicate corpus tweet identity')
         seen.add(identity)
         a, e = audits[key], evidence[identity]
-        if (a['tweet_id'] != tweet_id or a['tweet_url'] != row['permalink'] or
+        if (a['language_recorded'] != row['detected_lang'] or a['tweet_id'] != tweet_id or a['tweet_url'] != row['permalink'] or
                 a['text_original'] != row['text'] or a['text_translated'] != row['translated_text'] or
                 e['text_from_dataset_original'] != row['text'] or
                 e['text_from_dataset_translated'] != row['translated_text'] or

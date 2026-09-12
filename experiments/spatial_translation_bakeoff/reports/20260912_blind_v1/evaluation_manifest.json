@@ -1,0 +1,21 @@
+{
+  "audit_sha256": "a0c954837406177c676c3bff7a3df92567955ab8be509299bac4c2bd73f542a6",
+  "generation_freeze_sha256": "5a3b028b1eb4aedb54406c0a6c44a44339eb807b41d476a270597dbde30a224c",
+  "protected_source_hashes_match": true,
+  "report_hashes": {
+    "legacy_regression_analysis.csv": "845762f6f16cb8deb5e1549bc7268b14e624465c3b98b3a13340f41cd4393e3e",
+    "legacy_subset_comparison.csv": "ac8aba04b36b2c669e6e751a0581a3ad54065749944e6a0e9267c32ccf2a5781",
+    "representative_cases.csv": "044b448c32801a1c25faa267581da0eb8fca7dc6078d9e85ea0eb25b3cd555bd",
+    "system_comparison.csv": "2e04bc9837a46e387cf870e2fa8dadcb48308d92f8159c8767e89a69863c5296",
+    "validation_results.csv": "82f4e750c1e9915ae0539bdcf6b2d19fbc9df8c26aacf8c5a61a15d446e1779b"
+  },
+  "revealed_at": "2026-09-12T01:20:31.165975+00:00",
+  "run_id": "20260912_blind_v1",
+  "subset_counts": {
+    "BENIGN_TEXTUAL_DIFFERENCE": 29,
+    "POSSIBLE_SPATIAL_RELATION_CHANGE": 57,
+    "POSSIBLE_TOPONYM_CHANGE": 104,
+    "SEVERE_SPATIAL_DISCREPANCY": 77,
+    "UNRESOLVED_CROSS_LANGUAGE": 548
+  }
+}

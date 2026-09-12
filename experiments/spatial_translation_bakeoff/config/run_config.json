@@ -1,0 +1,34 @@
+{
+  "experiment_version": "blind-spatial-v1",
+  "smoke_seed": 20260912,
+  "smoke_size": 20,
+  "retries": 0,
+  "systems": {
+    "indictrans2": {
+      "model": "ai4bharat/indictrans2-indic-en-1B",
+      "revision": "ac3daf0ecd37be3b6957764a9179ab2b07fa9d6a",
+      "device": "cpu",
+      "seed": 20260912,
+      "num_beams": 5,
+      "max_source_tokens": 256,
+      "max_new_tokens": 256
+    },
+    "google": {
+      "model": "general/nmt",
+      "service": "Cloud Translation Advanced v3",
+      "project": null,
+      "project_environment_variable": "GOOGLE_CLOUD_PROJECT",
+      "location": "global",
+      "glossary": null
+    },
+    "openai": {
+      "model": "gpt-5.6-sol",
+      "api": "Responses v1",
+      "reasoning_effort": "low",
+      "max_output_tokens": 8192,
+      "temperature": null,
+      "seed": null,
+      "determinism_note": "No determinism guarantee. Omit unsupported temperature/seed rather than silently retry with changed settings."
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "configuration_sha256": "34373f51538eaf8c0c74a5a5c28ea751f5d904149637ca9a34dfdce77aa85f76",
+  "frozen_at": "2026-09-12T01:20:23.293695+00:00",
+  "input_sha256": "8d8f5fcab9e03c6a1dfc90d5a2bfc7a3f92959df7f202b8e9bd65a169f2d9337",
+  "prompt_sha256": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39",
+  "prompt_tuning_after_smoke": false,
+  "schema_sha256": "a7be81fcd635e0c170f5c803fe65d0305ae0881d4e76c2456f5400b0e636d558",
+  "smoke_integration_proven": {
+    "google": false,
+    "indictrans2": false,
+    "openai": false
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "blocked_systems": {
+    "google": [
+      "GOOGLE_CLOUD_TRANSLATE_LIBRARY_NOT_INSTALLED",
+      "GOOGLE_CLOUD_PROJECT_NOT_CONFIGURED",
+      "GOOGLE_ADC_NOT_CONFIGURED_ON_THIS_LOCAL_HOST"
+    ],
+    "indictrans2": [
+      "MISSING_DEPENDENCY_torch",
+      "MISSING_DEPENDENCY_transformers",
+      "MISSING_DEPENDENCY_IndicTransToolkit",
+      "MISSING_DEPENDENCY_sentencepiece",
+      "GATED_MODEL_HF_CREDENTIAL_NOT_CONFIGURED"
+    ],
+    "openai": [
+      "OPENAI_API_KEY_NOT_CONFIGURED"
+    ]
+  },
+  "candidate_generation_closed": true,
+  "files": {
+    "blind_translation_input.csv": "8d8f5fcab9e03c6a1dfc90d5a2bfc7a3f92959df7f202b8e9bd65a169f2d9337",
+    "runs/20260912_blind_v1/config_freeze.json": "f16be28b6e509420eddc3abac8407b0ccd8ee77f240d895a586319460dcc269d",
+    "runs/20260912_blind_v1/environment.json": "b71eb6455e9bb3fba2823b9d793ba7a8438cd1d48e3f11ee6beaf684f998c2fd",
+    "runs/20260912_blind_v1/frozen_config.json": "34373f51538eaf8c0c74a5a5c28ea751f5d904149637ca9a34dfdce77aa85f76",
+    "runs/20260912_blind_v1/frozen_prompt.txt": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39",
+    "runs/20260912_blind_v1/schema.json": "a7be81fcd635e0c170f5c803fe65d0305ae0881d4e76c2456f5400b0e636d558",
+    "runs/20260912_blind_v1/smoke_input.csv": "9de1a0f16e21edbc2a37caf8f6a7c261e94e58251e3271f4a6056b1a836368e4",
+    "runs/20260912_blind_v1/smoke_report.json": "ada75d00d210b2e792036b02d2de802c93c82e84817266da83f3f4356f3a3bc2",
+    "runs/20260912_blind_v1/source/__init__.py": "5b920deadd20c9f06984c928e5284cb19a9327c599ac541b288277f4cc45fa72",
+    "runs/20260912_blind_v1/source/adapters.py": "77c4e800fb4daa5b7eee1172b228ae5bf33805f87a6550634c1ea836f5435126",
+    "runs/20260912_blind_v1/source/common.py": "2a70221b5aea01dc218ec42b74fce854e83aece9e4734848f133b0d4b7757fc2",
+    "runs/20260912_blind_v1/source/evaluate.py": "b4b0081a2ed4cb5e0b6214e6ab6c6ccce4c741f3dacb8e1e5659d5b9fccc31cc",
+    "runs/20260912_blind_v1/source/generate.py": "da34fbf3fe306d429d1509191e22a48cf05fbc65650a8cf2193560ea202ef691",
+    "runs/20260912_blind_v1/source/prepare.py": "775a7975f0e11a39a0de3e133aa1b6d758e41d3c96c2205d150185437785797f",
+    "runs/20260912_blind_v1/source/schema.py": "c013a310d7aac9ef990012bf6831e349d808b5271596d7fc7a9d85e7bfc776a6",
+    "runs/20260912_blind_v1/source/validate.py": "e5ba713d267f4d38d3661d54d6d5d7d1700667260e41b847492de459cd5c5083",
+    "runs/google/20260912_blind_v1/candidates.csv": "d12793dea8ec9e1000b8ae6c4d1095cdd519c8172dafa950976a928953a2be1e",
+    "runs/google/20260912_blind_v1/requests.jsonl": "4350a07dd215ad247e3f6800d2bbeb012adad37f40f10df706c00a0f52619a8d",
+    "runs/google/20260912_blind_v1/smoke/candidates.csv": "664fa0cdad57088f57e5bfccb4bb634211ea0b50c2d5e1c5227d1ee36b3b2e15",
+    "runs/google/20260912_blind_v1/smoke/requests.jsonl": "59b17f729133dc70ea2722d790e1ea9e974c379eb1c19c318f4c0361f77e0671",
+    "runs/indictrans2/20260912_blind_v1/candidates.csv": "cd4055c864866d4e393b345115513d206fef56d81cb4b98b6362e50c78320a93",
+    "runs/indictrans2/20260912_blind_v1/requests.jsonl": "dca856e6383e80f157c1ca8635e482150bfcfc7aa7fd97c97c5a1f2f9a2cbced",
+    "runs/indictrans2/20260912_blind_v1/smoke/candidates.csv": "4908d4e334ea9e307670778d58adf92ddd34be27532fa4b5603aef18db3af293",
+    "runs/indictrans2/20260912_blind_v1/smoke/requests.jsonl": "3c009e4dcf814c880d6ef2274072263f474e2b511bd4be7cc791992ed6e7feb9",
+    "runs/openai/20260912_blind_v1/alignment.jsonl": "d56aec78ed203ef93742c2f84d8f2b01431dd208115f6e67d39b3d08798072e8",
+    "runs/openai/20260912_blind_v1/candidates.csv": "25fb6b88e607bd71a5eb039a59c44a3cb7539924aa1c9eeb7dedac955c4e1334",
+    "runs/openai/20260912_blind_v1/requests.jsonl": "55c64f6359c4ea6637c53f0f909f628e22140db2aa3e18b59f7443b8e05fd326",
+    "runs/openai/20260912_blind_v1/smoke/alignment.jsonl": "3b5b765227f1cd3c41b47053ede744d94193e45159cd3e9ccb9e4aeb81d3f6ad",
+    "runs/openai/20260912_blind_v1/smoke/candidates.csv": "52f54ca27a0cdb68076fe63a25d6e960d0986341f9c01c14883b4beae11d6eec",
+    "runs/openai/20260912_blind_v1/smoke/requests.jsonl": "41ad7c40e8380b2e963c9fe3b82eb8d44fd70a87dac2e90778a79cd8af5a0df8"
+  },
+  "frozen_at": "2026-09-12T01:20:23.428930+00:00",
+  "input_sha256": "8d8f5fcab9e03c6a1dfc90d5a2bfc7a3f92959df7f202b8e9bd65a169f2d9337",
+  "quality_comparison_available": false,
+  "run_id": "20260912_blind_v1",
+  "systems": [
+    "indictrans2",
+    "google",
+    "openai"
+  ]
+}
