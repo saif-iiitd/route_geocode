@@ -1,0 +1,19 @@
+{
+  "configuration_sha256": "e8da340e43c5f8ae680a169baea3f15f5349117e9a996bd502e8b7fc6be44853",
+  "frozen_at": "2026-09-12T15:35:29.483078+00:00",
+  "input_sha256": "8d8f5fcab9e03c6a1dfc90d5a2bfc7a3f92959df7f202b8e9bd65a169f2d9337",
+  "prompt_sha256": {
+    "google": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39",
+    "indictrans2": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39",
+    "ollama": "acc2732221872f37d006bb76be93d112827880703e04570fcdfac4112c83b032",
+    "openai": "b71bc027ac519d0c2a2673db9c345b1d3247b8ba29f6ddc84876c090f36ddd39"
+  },
+  "prompt_tuning_after_smoke": false,
+  "schema_sha256": "a7be81fcd635e0c170f5c803fe65d0305ae0881d4e76c2456f5400b0e636d558",
+  "smoke_integration_proven": {
+    "google": false,
+    "indictrans2": true,
+    "ollama": false,
+    "openai": false
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "google": {
+    "audit_labels_inspected": false,
+    "blockers": [
+      "GOOGLE_CLOUD_TRANSLATE_LIBRARY_NOT_INSTALLED",
+      "GOOGLE_CLOUD_PROJECT_NOT_CONFIGURED",
+      "GOOGLE_ADC_NOT_CONFIGURED_ON_THIS_LOCAL_HOST"
+    ],
+    "failure_rate": 1.0,
+    "selected_records": 20,
+    "smoke_failure_tolerance": 0,
+    "smoke_tolerance_reason": "",
+    "successful": 0,
+    "technical_gate": "BLOCKED"
+  },
+  "indictrans2": {
+    "audit_labels_inspected": false,
+    "blockers": [],
+    "failure_rate": 0.0,
+    "selected_records": 20,
+    "smoke_failure_tolerance": 0,
+    "smoke_tolerance_reason": "",
+    "successful": 20,
+    "technical_gate": "PASS"
+  },
+  "ollama": {
+    "audit_labels_inspected": false,
+    "blockers": [
+      "HOST_NOT_CONFIGURED"
+    ],
+    "failure_rate": 1.0,
+    "selected_records": 20,
+    "smoke_failure_tolerance": 0,
+    "smoke_tolerance_reason": "",
+    "successful": 0,
+    "technical_gate": "BLOCKED"
+  },
+  "openai": {
+    "audit_labels_inspected": false,
+    "blockers": [
+      "OPENAI_API_KEY_NOT_CONFIGURED"
+    ],
+    "failure_rate": 1.0,
+    "selected_records": 20,
+    "smoke_failure_tolerance": 0,
+    "smoke_tolerance_reason": "",
+    "successful": 0,
+    "technical_gate": "BLOCKED"
+  }
+}

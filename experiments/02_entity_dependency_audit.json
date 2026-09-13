@@ -1,0 +1,26 @@
+{
+  "sample_size": 150,
+  "seed": 20260913,
+  "entity_count_distribution": {
+    "0": 3,
+    "3": 46,
+    "4": 28,
+    "1": 19,
+    "2": 45,
+    "5": 8,
+    "7": 1
+  },
+  "zero_entity_rate": 0.02,
+  "zero_entity_examples": [
+    "Breakdown car has been removed from Swami Nagar Subway and traffic is normal.",
+    "Breakdown truck has been removed from K. N. Katju Marg and traffic is normal now.",
+    "Obstruction in traffic in the carriageway form GGR-PDR towrds Dhaula kuan due to a car caught fire. Kindly avoid the stretch."
+  ],
+  "to_towards_dependency_distribution": {
+    "towards|prep|ADP": 89,
+    "to|pcomp|ADP": 81,
+    "to|aux|PART": 4,
+    "to|prep|ADP": 36,
+    "towards|ROOT|ADP": 1
+  }
+}
