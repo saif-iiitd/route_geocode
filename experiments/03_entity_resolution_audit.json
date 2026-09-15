@@ -1,0 +1,94 @@
+{
+  "sample_size": 150,
+  "seed": 20260913,
+  "total_entities": 408,
+  "candidate_status_counts": {
+    "GAZETTEER_RESOLVED": 308,
+    "OUT_OF_GAZETTEER_UNRESOLVED": 83,
+    "GAZETTEER_GENERIC_AMBIGUOUS": 17
+  },
+  "pipeline_source_counts": {
+    "GAZETTEER_MATCHER": 325,
+    "BASE_SPACY_NER": 83
+  },
+  "examples": {
+    "GAZETTEER_RESOLVED|GAZETTEER_MATCHER": [
+      [
+        "Ashram flyover",
+        "Obstruction in traffic in the carriageway Ashram flyover towards Nehru Nagar due to breakdown of a bus at Subhash Place Depot."
+      ],
+      [
+        "Nehru Nagar",
+        "Obstruction in traffic in the carriageway Ashram flyover towards Nehru Nagar due to breakdown of a bus at Subhash Place Depot."
+      ],
+      [
+        "Madhuban Chowk",
+        "Obstruction in traffic in the carriageway from Madhuban Chowk towards Peeragarhi due to breakdown of a truck near Peeragarhi flyover. Kindly"
+      ],
+      [
+        "Peeragarhi",
+        "Obstruction in traffic in the carriageway from Madhuban Chowk towards Peeragarhi due to breakdown of a truck near Peeragarhi flyover. Kindly"
+      ],
+      [
+        "Peeragarhi",
+        "Obstruction in traffic in the carriageway from Madhuban Chowk towards Peeragarhi due to breakdown of a truck near Peeragarhi flyover. Kindly"
+      ],
+      [
+        "Mukarba Chowk",
+        "Traffic is heavy in the carriageway from Mukarba Chowk towards Alipur. Kindly avoid this stretch."
+      ]
+    ],
+    "OUT_OF_GAZETTEER_UNRESOLVED|BASE_SPACY_NER": [
+      [
+        "Subhash Place Depot",
+        "Obstruction in traffic in the carriageway Ashram flyover towards Nehru Nagar due to breakdown of a bus at Subhash Place Depot."
+      ],
+      [
+        "DC",
+        "Traffic is affected from DC office Nand Nagri towards Gagan T Point. KIndly avoid the stretch."
+      ],
+      [
+        "Pahar Ganj",
+        "Traffic is heavy near Raj Ghat, Delhi Gate, Kamla Market and Pahar Ganj. Kindly avoid the stretch."
+      ],
+      [
+        "Andheria Mor",
+        "Obstruction in traffic in the carriageway from Andheria Mor towards Mahipalpur due to breakdown of a DTC bus near Masoodpur. Kindly avoid th"
+      ],
+      [
+        "DTC",
+        "Obstruction in traffic in the carriageway from Andheria Mor towards Mahipalpur due to breakdown of a DTC bus near Masoodpur. Kindly avoid th"
+      ],
+      [
+        "Shadi Pur DMS",
+        "Traffic is heavy from Moti Nagar towards R/A Pusa due to water logging near Shadi Pur DMS booth. Kindly avoid the stretch."
+      ]
+    ],
+    "GAZETTEER_GENERIC_AMBIGUOUS|GAZETTEER_MATCHER": [
+      [
+        "flyover",
+        "Obstruction in traffic in the carriageway from Madhuban Chowk towards Peeragarhi due to breakdown of a truck near Peeragarhi flyover. Kindly"
+      ],
+      [
+        "flyover",
+        "Obstruction in traffic from Punjabi Bagh towards Rajouri Garden due to breakdown of a cluster bus on Punjabi Bagh flyover."
+      ],
+      [
+        "flyover",
+        "Breakdown bus removed from Kalka Ji flyover flyover."
+      ],
+      [
+        "flyover",
+        "Breakdown bus removed from Kalka Ji flyover flyover."
+      ],
+      [
+        "Flyover",
+        "Water logging reported under Manglapuri Flyover (both carriageways) . Kindly avoid the stretch."
+      ],
+      [
+        "Mandi",
+        "Water logging in front of Azadpur Mandi."
+      ]
+    ]
+  }
+}

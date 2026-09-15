@@ -292,3 +292,152 @@ Git state at handoff time: `HEAD` at `c643506` ("translation with ChatGPT Done")
 working tree clean except for the in-progress run's artifacts under
 `experiments/spatial_translation_bakeoff/runs/{20260912_blind_v5,indictrans2,google,openai,ollama}/`
 (untracked, expected — the run hasn't finished/frozen yet).
+
+## Update 2026-09-16: git push resolved, entity resolution built (step 3)
+
+**Git.** The prior session's commit (`d487beb`, semantic-role parser +
+entity-dependency audit + translation bake-off eval) failed to push at the time
+(`403`, local user `safe-ali` lacked write access to
+`saif-iiitd/route_geocode`). This has since resolved itself — `HEAD` is now
+`d487beb` and `origin/main` reports up to date. **Nothing has been committed or
+pushed this session yet** (see git state at the end of this section);
+everything below is new, uncommitted work.
+
+**Scope carried forward from the previous update**: still working the
+`chatgpt_handoff_2026-09-12.md` "Correct revision order," resumed at step 3
+(candidate-based entity resolution), 4,325 `READY_ORIGINAL_EN` records only.
+Translation-bakeoff work remains set aside, untouched.
+
+### Experiment 03 — candidate-based entity resolution (`src/entity_resolution.py`)
+
+Classifies every recognized mention (from experiment 02's NER pipeline) by
+local resolution evidence, with no geocoding and no invented disambiguation:
+`GAZETTEER_RESOLVED` (exact gazetteer match), `GAZETTEER_GENERIC_AMBIGUOUS`
+(matches a bare feature-type noun like "Flyover"/"Temple"/"Mandi" — many real
+places share these; curated list of 6 found by manual review, not inferred),
+or `OUT_OF_GAZETTEER_UNRESOLVED` (recognized only by base spaCy NER, no
+gazetteer evidence). Audited on the same seeded 150-record sample as
+experiment 02: 75.5% resolved, 4.2% generic-ambiguous, 20.3% unresolved. The
+unresolved bucket was shown to mix two real, different causes — genuine
+gazetteer gaps (e.g. "Andheria Mor", a real place missing from
+`Data/tweet_location_terms.txt`) and NER noise (acronyms like "DC"/"DTC"
+mistagged as locations) — both left unresolved rather than guessed apart.
+Full write-up: `experiments/03_entity_resolution_audit.md`.
+
+### Live geocoding turned on (OpenCage)
+
+The user added `secrets/opencage_token.txt` (already gitignored via the
+`secrets/` rule). **Two earlier drafts of this key were invalid**: the first
+(`apl_mcp_live_...`) was checked and turned out to belong to a different
+service entirely (not even a text geocoder), the second was actually an
+**IPStack** key (IP-address geolocation, not place-name geocoding — wrong tool
+class regardless of validity) — both confirmed by live 401s / by inspecting
+the format, not assumed. The current key (32-char hex) was tested live and
+works. **Budget note for whoever picks this up**: OpenCage's free tier is
+2,500 requests/day; nothing in this session's experiments has needed more than
+a few dozen cached calls, but a full-corpus pass would.
+
+### Experiment 04 — generic-mention candidate resolution (`src/geocoding.py`)
+
+User asked whether generic mentions ("flyover" etc.) could be disambiguated
+using their co-mentioned origin/destination context. Before building anything,
+two designs were tested live against OpenCage: **compound-query merging**
+(`"Peeragarhi Flyover, Delhi"`) failed (fell back to a city-level match,
+confidence 3); **bounding-box-restricted bare-term search** (`"flyover"`
+restricted to a small box around the qualifier's own resolved location)
+worked (returned real, correctly-named candidates). Built on the second
+approach: for every `GAZETTEER_GENERIC_AMBIGUOUS` mention, find the nearest
+preceding `GAZETTEER_RESOLVED` mention in the same tweet as a "qualifier",
+geocode the qualifier for an anchor, then geocode the bare generic term
+bounded to ~2.2 km around it. Candidates ranked by (a) whether the returned
+name literally contains the generic term (12/12 hit rate in the sample) and
+(b) a **free, local, zero-API cross-check** against `Data/network_nodes_data.csv`'s
+real `bridge`/`tunnel` flags, reprojected from UTM zone 43N to WGS84
+(`load_bridge_tunnel_nodes()`/`corroborate()` in `src/geocoding.py`) — found
+zero hits in this small sample (only 12 distinct named bridge segments exist
+locally), which is expected sparse coverage, not a failure. Two real gaps
+surfaced: a spelling mismatch ("Kalka Ji" in tweet text vs. gazetteer's
+"Kalkaji" — motivated experiment 05 below) and a too-tight bounding box for
+sparser categories (all 3 "Temple" cases returned zero candidates). Every
+OpenCage response is cached to disk and committed
+(`experiments/04_opencage_cache.json`) — verified it contains no key material.
+Full write-up: `experiments/04_generic_mention_candidate_resolution.md`.
+
+### Experiment 05 — fuzzy/normalized alias matching
+
+Explored whether fuzzy matching could recover the "Kalka Ji"/"Kalkaji"-style
+gaps generally. Real findings, not assumptions: `token_sort_ratio`
+(word-order-tolerant) was tested and **rejected** — it scored "Nagar Kirtan"
+(a religious term, not a place) at 87 against "Kirti Nagar" (a real, different
+place), a dangerous false positive. Plain `fuzz.ratio` on "Kalka Ji" vs.
+"Kalkaji" alone only scored 80 (same band as a real wrong match) because
+Levenshtein ratio over-penalizes a single space on short strings. Landed on a
+**two-stage design**, now in `classify_mention`: (1) whitespace/punctuation-
+normalized exact match — zero ambiguity risk, catches spacing/punctuation
+variants like "Kalka Ji"/"Kalkaji", "Mangol Puri"/"Mangolpuri"; (2)
+`fuzz.ratio >= 90` on the remainder, threshold set from a real 10-point cliff
+found in this sample's data (94.1/93.3/90.9 correct vs. 80.0/80.0 wrong, no
+threshold in between). Two new statuses: `GAZETTEER_NORMALIZED_MATCH`,
+`GAZETTEER_FUZZY_MATCH`; every match records its method and (for fuzzy) exact
+score. On the 150-record sample: `OUT_OF_GAZETTEER_UNRESOLVED` dropped from 83
+to 74 (9 mentions recovered, 0 false positives). Full write-up:
+`experiments/05_fuzzy_alias_matching.md`.
+
+### New dependencies installed this session
+
+`pyproj` (UTM↔WGS84 reprojection for the local network-node corroboration
+check) and `rapidfuzz` (fuzzy string matching). No `requirements.txt` exists in
+this repo to update.
+
+### Validation
+
+Full suite: **66/66 passing** (`python -B -m unittest discover -s tests -v`;
+was 40 at the end of the previous handoff — 8 in `test_entity_resolution.py`
+from experiment 03, +10 in `test_geocoding.py` from experiment 04, +8 more in
+`test_entity_resolution.py` from experiment 05, +net 0 elsewhere).
+
+### Outstanding / next-step boundaries
+
+1. **Nothing from this session is committed yet** — git state below is the
+   actual current state; the previous session's `d487beb` did make it to
+   `origin/main` (confirmed this session via `git status`).
+2. **Free-standing generic mentions** (no adjacent qualifier) are not handled
+   by experiment 04's design — none occurred in the 150-record sample, so the
+   user's original O/D-corridor-anchoring idea remains a documented but
+   unimplemented fallback.
+3. **Uniqueness is not guaranteed** in experiment 04's candidate ranking: two
+   different qualifiers ("Manglapuri", "Palam") both returned "Dwarka Flyover"
+   as their top candidate — plausible given real Delhi geography, but nothing
+   currently flags this kind of collision.
+4. **The 90 fuzzy threshold is evidenced on one 150-record sample**, not the
+   full 4,325-record corpus — may need revisiting with more data.
+5. **Kalkaji-style vs. Kalka-Ji-style is an alias/spelling gap; "Kalka Ji" as a
+   recognized entity span at all is a separate, upstream NER-recognition gap**
+   not touched by any of this session's work (it isn't tagged as an entity by
+   the current pipeline in the first place).
+6. Ollama model decision (translation bake-off, carried from the prior
+   handoff) is still open and still out of scope for the current thread of
+   work.
+7. Next roadmap item per `chatgpt_handoff_2026-09-12.md`: step 4, the Delhi
+   traffic gazetteer/alias layer proper — this session's experiments 03-05
+   found several concrete candidates for it (missing entries like "Andheria
+   Mor", spelling variants like "Kalka Ji") but did not build the layer
+   itself, by design (kept as a separable, auditable next step).
+
+### Reproduce
+
+```powershell
+python -B -m unittest discover -s tests -v
+python -B experiments/03_entity_resolution_audit.py
+python -B experiments/04_generic_mention_candidate_resolution.py   # uses cached OpenCage responses; needs secrets/opencage_token.txt only on a cache miss
+python -B experiments/05_fuzzy_alias_matching.py
+```
+
+Git state at this handoff: `HEAD` at `d487beb`, up to date with `origin/main`.
+Working tree has the following **new, uncommitted** files: `src/entity_resolution.py`,
+`src/geocoding.py`, `tests/test_entity_resolution.py`, `tests/test_geocoding.py`,
+`experiments/03_entity_resolution_audit.{py,md,json}`,
+`experiments/04_generic_mention_candidate_resolution.{py,md,json}`,
+`experiments/04_opencage_cache.json`, `experiments/05_fuzzy_alias_matching.{py,md,json}`.
+No secrets among them (`secrets/opencage_token.txt` stays gitignored; the
+committed cache file was checked for key leakage — none found).

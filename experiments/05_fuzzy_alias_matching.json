@@ -1,0 +1,57 @@
+{
+  "sample_size": 150,
+  "seed": 20260913,
+  "total_entities": 406,
+  "candidate_status_counts": {
+    "GAZETTEER_RESOLVED": 306,
+    "OUT_OF_GAZETTEER_UNRESOLVED": 74,
+    "GAZETTEER_GENERIC_AMBIGUOUS": 17,
+    "GAZETTEER_NORMALIZED_MATCH": 6,
+    "GAZETTEER_FUZZY_MATCH": 3
+  },
+  "match_method_counts": {
+    "EXACT": 323,
+    "null": 74,
+    "NORMALIZED": 6,
+    "FUZZY": 3
+  },
+  "normalized_hits": [
+    [
+      "Mangol Puri",
+      "Mangolpuri"
+    ],
+    [
+      "Pahar Ganj",
+      "Paharganj"
+    ],
+    [
+      "Red Fort-",
+      "Red Fort"
+    ],
+    [
+      "Sagar Pur",
+      "Sagarpur"
+    ],
+    [
+      "Satyaniketan",
+      "Satya Niketan"
+    ]
+  ],
+  "fuzzy_hits": [
+    [
+      "Kirbi Place",
+      "Kirby Place",
+      90.9
+    ],
+    [
+      "Mehraulli",
+      "Mehrauli",
+      94.1
+    ],
+    [
+      "Samalka",
+      "Samalkha",
+      93.3
+    ]
+  ]
+}

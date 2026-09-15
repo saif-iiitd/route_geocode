@@ -1,0 +1,566 @@
+{
+  "sample_size": 150,
+  "seed": 20260913,
+  "results": [
+    {
+      "dataset_record_id": "record:ad9e353a75888d89dc82e7f0fe4931f903309fcd6bc741ab4e6b3f84ed85b55c",
+      "tweet_text": "Obstruction in traffic in the carriageway from Madhuban Chowk towards Peeragarhi due to breakdown of a truck near Peeragarhi flyover. Kindly avoid the stretch.",
+      "generic_term": "flyover",
+      "qualifier": "Peeragarhi",
+      "anchor": {
+        "query": "Peeragarhi, Delhi",
+        "lat": 28.6797476,
+        "lng": 77.0926593,
+        "confidence": 9,
+        "formatted": "Peeragarhi, Rohtak Road, Nangloi, Delhi - 110083, Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Mangolpuri Flyover, Pitampura, Delhi - 110056, Delhi, India",
+          "lat": 28.6954427,
+          "lng": 77.1097001,
+          "opencage_confidence": 8,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Mangolpuri Flyover, Keshavpuram, Delhi - 110083, Delhi, India",
+          "lat": 28.6899821,
+          "lng": 77.0967604,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Mangolpuri Flyover, Rohini, Delhi - 110083, Delhi, India",
+          "lat": 28.6900042,
+          "lng": 77.0966527,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:d76061a90d74ec4c942c1247b82a338d1108c6f2a2292af7d6e0d3ad9f5beba5",
+      "tweet_text": "Obstruction in traffic from Punjabi Bagh towards Rajouri Garden due to breakdown of a cluster bus on Punjabi Bagh flyover.",
+      "generic_term": "flyover",
+      "qualifier": "Punjabi Bagh",
+      "anchor": {
+        "query": "Punjabi Bagh, Delhi",
+        "lat": 28.672995,
+        "lng": 77.1461239,
+        "confidence": 8,
+        "formatted": "Punjabi Bagh, Rohtak Road, Ashok Vihar, Delhi - 110035, Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Shri Hans Maharaj Flyover, Punjabi Bagh, Delhi - 110026, Delhi, India",
+          "lat": 28.6733224,
+          "lng": 77.1399547,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Shri Hans Maharaj Flyover, West, Delhi - 110026, Delhi, India",
+          "lat": 28.6733386,
+          "lng": 77.1398709,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Shadipur Flyover, Patel Nagar, Delhi - 110015, Delhi, India",
+          "lat": 28.6552615,
+          "lng": 77.1520756,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Zakhira Flyover, Punjabi Bagh, Delhi - 110035, Delhi, India",
+          "lat": 28.6703916,
+          "lng": 77.1610412,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Shri Hans Maharaj Flyover, Keshavpuram, Delhi - 110026, Delhi, India",
+          "lat": 28.6761118,
+          "lng": 77.1408906,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:6415e50e91802ed301c3eb7197fbdd79ceb660dd38b0930daf585932088d5766",
+      "tweet_text": "Breakdown bus removed from Kalka Ji flyover flyover.",
+      "generic_term": "flyover",
+      "qualifier": null,
+      "anchor": null,
+      "candidates": [],
+      "note": "NO_LOCAL_QUALIFIER: falls back to O/D corridor anchoring, not implemented here."
+    },
+    {
+      "dataset_record_id": "record:6415e50e91802ed301c3eb7197fbdd79ceb660dd38b0930daf585932088d5766",
+      "tweet_text": "Breakdown bus removed from Kalka Ji flyover flyover.",
+      "generic_term": "flyover",
+      "qualifier": null,
+      "anchor": null,
+      "candidates": [],
+      "note": "NO_LOCAL_QUALIFIER: falls back to O/D corridor anchoring, not implemented here."
+    },
+    {
+      "dataset_record_id": "record:f8ffbe0d0948121e3b436cb341e2130b5c33a571d20e3755bd6aceb95b951c0c",
+      "tweet_text": "Water logging reported under Manglapuri Flyover (both carriageways) . Kindly avoid the stretch.",
+      "generic_term": "Flyover",
+      "qualifier": "Manglapuri",
+      "anchor": {
+        "query": "Manglapuri, Delhi",
+        "lat": 28.5893101,
+        "lng": 77.0876296,
+        "confidence": 9,
+        "formatted": "Manglapuri, Delhi, South West Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Dwarka Flyover, Raj Nagar I, Delhi - 110045, Delhi, India",
+          "lat": 28.5863676,
+          "lng": 77.0876311,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Dwarka Flyover, Raj Nagar II, Delhi - 110045, Delhi, India",
+          "lat": 28.5874015,
+          "lng": 77.0853621,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Dwarka Flyover, Najafgarh, Delhi - 110045, Delhi, India",
+          "lat": 28.5924131,
+          "lng": 77.0817591,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Dwarka Flyover, Najafgarh, Delhi Cantonment - 110045, Delhi, India",
+          "lat": 28.5833642,
+          "lng": 77.0922804,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:e2e29eccd71c4f54a316ce118f47baaee2346d4b3bccabc084a7ba8328dc7bbf",
+      "tweet_text": "Water logging in front of Azadpur Mandi.",
+      "generic_term": "Mandi",
+      "qualifier": "Azadpur",
+      "anchor": {
+        "query": "Azadpur, Delhi",
+        "lat": 28.7070448,
+        "lng": 77.1803722,
+        "confidence": 8,
+        "formatted": "Azadpur (Yellow Line), Mahatma Gandhi Marg, Ashok Vihar, Delhi - 110088, Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "DGD, Gur Mandi, Canal Road, Keshavpuram, Delhi - 110007, Delhi, India",
+          "lat": 28.6872644,
+          "lng": 77.1987233,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Azadpur Mandi Office, Mall Road Extension, Jahangir Puri, Delhi - 110033, Delhi, India",
+          "lat": 28.7218928,
+          "lng": 77.1649222,
+          "opencage_confidence": 10,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Mandi Marg, Kewal Park, Delhi - 110088, Delhi, India",
+          "lat": 28.7138841,
+          "lng": 77.1757988,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:c9c9bbba757afc4dfee2b7672177f85117cd9470c782f2fbddd7ea6c91069171",
+      "tweet_text": "Traffic is heavy in front of Akshardham Temple (both carriageways) due to heavy volume of traffic. Kindly avoid the stretch",
+      "generic_term": "Temple",
+      "qualifier": "Akshardham",
+      "anchor": {
+        "query": "Akshardham, Delhi",
+        "lat": 28.6125167,
+        "lng": 77.2773184,
+        "confidence": 9,
+        "formatted": "Akshardham, NH24 Bypass, Mayur Vihar, Delhi - 110091, Delhi, India"
+      },
+      "candidates": []
+    },
+    {
+      "dataset_record_id": "record:a914e7ecd80e575c3653d031f66a1017cae987286d1b4f42ab288951bffc1b70",
+      "tweet_text": "Obstruction in traffic on NH- 24 in the carriageway from Akshardham Temple towards Noida due to Road.. 1/2",
+      "generic_term": "Temple",
+      "qualifier": "Akshardham",
+      "anchor": {
+        "query": "Akshardham, Delhi",
+        "lat": 28.6125167,
+        "lng": 77.2773184,
+        "confidence": 9,
+        "formatted": "Akshardham, NH24 Bypass, Mayur Vihar, Delhi - 110091, Delhi, India"
+      },
+      "candidates": []
+    },
+    {
+      "dataset_record_id": "record:48dda260c7629fdf27df0d6ad99cd6fea402e8935c09dfc4affbb04e55a34d5c",
+      "tweet_text": "Obstruction in traffic from Delhi Cant towards Dwarka due to breakdown of a vehicle on Palam Flyover. Kindly avoid the stretch.",
+      "generic_term": "Flyover",
+      "qualifier": "Palam",
+      "anchor": {
+        "query": "Palam, Delhi",
+        "lat": 28.5918933,
+        "lng": 77.0828242,
+        "confidence": 7,
+        "formatted": "Palam, Delhi - 110045, Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Dwarka Flyover, Raj Nagar I, Delhi - 110045, Delhi, India",
+          "lat": 28.5863676,
+          "lng": 77.0876311,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Dwarka Flyover, Raj Nagar II, Delhi - 110045, Delhi, India",
+          "lat": 28.5874015,
+          "lng": 77.0853621,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Dwarka Flyover, Najafgarh, Delhi - 110045, Delhi, India",
+          "lat": 28.5923161,
+          "lng": 77.0816508,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Dwarka Flyover, New Delhi, Delhi Cantonment - 110045, Delhi, India",
+          "lat": 28.5823184,
+          "lng": 77.0939972,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:ce94dd57529ba3da8daaf274ffe590cc3b24dcd9cbaa3056c3d78a10d364f6c1",
+      "tweet_text": "Traffic is heavy from Deepali Chowk towards Mukarba Chowk due to breakdown of two buses near Madhuban Chowk Underpass. Kindly avoid the stretch.",
+      "generic_term": "Underpass",
+      "qualifier": "Madhuban Chowk",
+      "anchor": {
+        "query": "Madhuban Chowk, Delhi",
+        "lat": 28.7032676,
+        "lng": 77.1322497,
+        "confidence": 8,
+        "formatted": "Madhuban Chowk, Lala Jagat Narayan marg, Pitampura, Delhi - 110034, Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Outer Ring Road Underpass, Pitampura, Delhi - 110034, Delhi, India",
+          "lat": 28.7027475,
+          "lng": 77.1298061,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Outer Ring Road Underpass, Rohini, Delhi - 110034, Delhi, India",
+          "lat": 28.7053022,
+          "lng": 77.1321783,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:9ea9af5d3d342dcf217ac4b64ce7bfbfdf242baafd0e911388db433b6bbc9577",
+      "tweet_text": "Breakdown truck has been removed from Nehru Nagar Flyover. Traffic is now normal from Ashram towards Moolchand.",
+      "generic_term": "Flyover",
+      "qualifier": "Nehru Nagar",
+      "anchor": {
+        "query": "Nehru Nagar, Delhi",
+        "lat": 28.5685108,
+        "lng": 77.2513847,
+        "confidence": 7,
+        "formatted": "Lajpat Nagar, Delhi - 110065, Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Moolchand Flyover, Lajpat Nagar, Delhi - 110124, Delhi, India",
+          "lat": 28.5655626,
+          "lng": 77.2340117,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Jangpura Road Flyover, Lajpat Nagar, Delhi - 110014, Delhi, India",
+          "lat": 28.5787166,
+          "lng": 77.2535017,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Defence Colony Flyover, Lajpat Nagar, Delhi - 110014, Delhi, India",
+          "lat": 28.5834441,
+          "lng": 77.2404351,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:6bac3fc027867e990dc489f82c596fc3d479c2431f8e52d9f3310a30c5d26504",
+      "tweet_text": "1/2 Obstruction in traffic in the carriageway from Akshardham Temple towards Noida due to Road construction work near...",
+      "generic_term": "Temple",
+      "qualifier": "Akshardham",
+      "anchor": {
+        "query": "Akshardham, Delhi",
+        "lat": 28.6125167,
+        "lng": 77.2773184,
+        "confidence": 9,
+        "formatted": "Akshardham, NH24 Bypass, Mayur Vihar, Delhi - 110091, Delhi, India"
+      },
+      "candidates": []
+    },
+    {
+      "dataset_record_id": "record:c6cbbfa8eff9a8f8e802e0bcb375ae9902bdcbe97f343e299b2317dab4a0395f",
+      "tweet_text": "Obstruction in traffic from Punjabi Bagh towards Prem Bari Pul due to breakdown of a vehicle on Britania Flyover. Kindly avoid the stretch.",
+      "generic_term": "Flyover",
+      "qualifier": "Prem Bari Pul",
+      "anchor": {
+        "query": "Prem Bari Pul, Delhi",
+        "lat": 28.7000051,
+        "lng": 77.1585444,
+        "confidence": 9,
+        "formatted": "Prem Bari Pul, Mahatma Gandhi Road, Ashok Vihar, Delhi - 110088, Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Shalimar Bagh Flyover, Ashok Vihar, Delhi - 110088, Delhi, India",
+          "lat": 28.7024292,
+          "lng": 77.1661165,
+          "opencage_confidence": 8,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Azadpur Flyover, Civil Lines, Delhi - 110088, Delhi, India",
+          "lat": 28.7106955,
+          "lng": 77.1767696,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Maharaja Nahar Singh Marg Flyover, Ashok Vihar, Delhi - 110035, Delhi, India",
+          "lat": 28.6959017,
+          "lng": 77.1582113,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:15d09b63f1277a381e30e34df6673164cd5835c6923d2958ec479dab1c63702d",
+      "tweet_text": "Obstruction in traffic from Azadpur towards Punjabi Bagh due to breakdown of a DTC bus on Britania Flyover.",
+      "generic_term": "Flyover",
+      "qualifier": "Punjabi Bagh",
+      "anchor": {
+        "query": "Punjabi Bagh, Delhi",
+        "lat": 28.672995,
+        "lng": 77.1461239,
+        "confidence": 8,
+        "formatted": "Punjabi Bagh, Rohtak Road, Ashok Vihar, Delhi - 110035, Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Shri Hans Maharaj Flyover, Punjabi Bagh, Delhi - 110026, Delhi, India",
+          "lat": 28.6733224,
+          "lng": 77.1399547,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Shri Hans Maharaj Flyover, West, Delhi - 110026, Delhi, India",
+          "lat": 28.6733386,
+          "lng": 77.1398709,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Shadipur Flyover, Patel Nagar, Delhi - 110015, Delhi, India",
+          "lat": 28.6552615,
+          "lng": 77.1520756,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Zakhira Flyover, Punjabi Bagh, Delhi - 110035, Delhi, India",
+          "lat": 28.6703916,
+          "lng": 77.1610412,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Shri Hans Maharaj Flyover, Keshavpuram, Delhi - 110026, Delhi, India",
+          "lat": 28.6761118,
+          "lng": 77.1408906,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:5bf2dcb7aba0dd8f0efa814c479a5c11ebdcab33b7d85526a7baa316988ae419",
+      "tweet_text": "Obstruction in traffic in the carriageway from Mangol Puri towards Peeragarhi due to breakdown of a truck on Mangol Puri flyover. Kindly avoid the stretch.",
+      "generic_term": "flyover",
+      "qualifier": "Peeragarhi",
+      "anchor": {
+        "query": "Peeragarhi, Delhi",
+        "lat": 28.6797476,
+        "lng": 77.0926593,
+        "confidence": 9,
+        "formatted": "Peeragarhi, Rohtak Road, Nangloi, Delhi - 110083, Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Mangolpuri Flyover, Pitampura, Delhi - 110056, Delhi, India",
+          "lat": 28.6954427,
+          "lng": 77.1097001,
+          "opencage_confidence": 8,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Mangolpuri Flyover, Keshavpuram, Delhi - 110083, Delhi, India",
+          "lat": 28.6899821,
+          "lng": 77.0967604,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Mangolpuri Flyover, Rohini, Delhi - 110083, Delhi, India",
+          "lat": 28.6900042,
+          "lng": 77.0966527,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:0d86ecbb7db5b925c6729cc1e69171908c07de09644de147d8ccf8c34bb5405f",
+      "tweet_text": "Traffic is heavy due water logging under pas Jhilmil flyover(Maharaja Surajmal Marg) and under pas Vivek Vihar flyover (road no. 58 Kasturba Gandhi Marg).",
+      "generic_term": "flyover",
+      "qualifier": "Vivek Vihar",
+      "anchor": {
+        "query": "Vivek Vihar, Delhi",
+        "lat": 28.6691641,
+        "lng": 77.312267,
+        "confidence": 8,
+        "formatted": "Vivek Vihar, Delhi, North East Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Shahdara Flyover, Shahdara, Delhi - 110032, Delhi, India",
+          "lat": 28.6759758,
+          "lng": 77.29604,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Shahdara Flyover, Shahdara, Delhi - 110095, Delhi, India",
+          "lat": 28.6755377,
+          "lng": 77.3013853,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Anand Vihar Railway Terminal Flyover, Anand Vihar, Delhi - 110151, Delhi, India",
+          "lat": 28.6515471,
+          "lng": 77.3193073,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        },
+        {
+          "formatted": "Anand Vihar Railway Terminal Flyover, Anand Vihar, Delhi - 110195, Delhi, India",
+          "lat": 28.6569504,
+          "lng": 77.3197881,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    },
+    {
+      "dataset_record_id": "record:814b450d6a208c9f4c3d6673ed6ba56c28a46a87f63f51c8f4724db919d42344",
+      "tweet_text": "Traffic is heavy in both carriageways due to water logging at Prahladpur underpass.",
+      "generic_term": "underpass",
+      "qualifier": "Prahladpur",
+      "anchor": {
+        "query": "Prahladpur, Delhi",
+        "lat": 28.5793345,
+        "lng": 77.1001517,
+        "confidence": 9,
+        "formatted": "Delhi Cantonment, New Delhi, India"
+      },
+      "candidates": [
+        {
+          "formatted": "Yakshini Chowk Underpass, New Delhi, Delhi Cantonment - 110010, Delhi, India",
+          "lat": 28.5751989,
+          "lng": 77.1168556,
+          "opencage_confidence": 9,
+          "name_match": true,
+          "corroborated": null
+        }
+      ]
+    }
+  ]
+}
