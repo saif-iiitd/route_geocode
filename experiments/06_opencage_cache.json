@@ -1,0 +1,2749 @@
+{
+  "q=Bihari Colony, Delhi|proximity=28.6139,77.209": {
+    "documentation": "https://opencagedata.com/api",
+    "licenses": [
+      {
+        "name": "see attribution guide",
+        "url": "https://opencagedata.com/credits"
+      }
+    ],
+    "rate": {
+      "limit": 2500,
+      "remaining": 2459,
+      "reset": 1789516800
+    },
+    "results": [
+      {
+        "annotations": {
+          "DIGIPIN": "39J-2LK-J9P5",
+          "DMS": {
+            "lat": "28° 40' 16.05324'' N",
+            "lng": "77° 16' 57.74736'' E"
+          },
+          "MGRS": "43RGM2306773682",
+          "Maidenhead": "ML88pq31wb",
+          "Mercator": {
+            "x": 8603071.657,
+            "y": 3313357.87
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=3837776885#map=17/28.67113/77.28271",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.67113/77.28271&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.67113&mlon=77.28271#map=17/28.67113/77.28271"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngne7t3t5rzs7q0r0c",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "empire.framework.octagon"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6811259,
+            "lng": 77.2927076
+          },
+          "southwest": {
+            "lat": 28.6611259,
+            "lng": 77.2727076
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "neighbourhood",
+          "city": "Delhi",
+          "city_district": "Shahdara South",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "neighbourhood": "Bihari Colony",
+          "postcode": "110032",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "East Delhi",
+          "suburb": "Bhola Nath Nagar"
+        },
+        "confidence": 7,
+        "formatted": "Bhola Nath Nagar, Delhi - 110032, Delhi, India",
+        "geometry": {
+          "lat": 28.6711259,
+          "lng": 77.2827076
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-3T6-77K9",
+          "DMS": {
+            "lat": "28° 40' 14.78964'' N",
+            "lng": "77° 16' 50.86488'' E"
+          },
+          "MGRS": "43RGM2288173640",
+          "Maidenhead": "ML88pq30qx",
+          "Mercator": {
+            "x": 8602858.837,
+            "y": 3313313.566
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=6482325732#map=17/28.67077/77.28080",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.67077/77.28080&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.67077&mlon=77.28080#map=17/28.67077/77.28080"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngne65m5cfn6bye97x",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "road": "Road Number 57",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "clarifies.incur.essential"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6708249,
+            "lng": 77.2808458
+          },
+          "southwest": {
+            "lat": 28.6707249,
+            "lng": 77.2807458
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "transportation",
+          "_normalized_city": "Delhi",
+          "_type": "bus_stop",
+          "city": "Delhi",
+          "city_district": "Shahdara South",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "highway": "Bihari Colony",
+          "neighbourhood": "Kanti Nagar Extension",
+          "postcode": "110032",
+          "road": "Road Number 57",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "East Delhi",
+          "suburb": "Karkarduma"
+        },
+        "confidence": 9,
+        "formatted": "Bihari Colony, Road Number 57, Karkarduma, Delhi - 110032, Delhi, India",
+        "geometry": {
+          "lat": 28.6707749,
+          "lng": 77.2807958
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-499-JF7M",
+          "DMS": {
+            "lat": "28° 39' 13.71600'' N",
+            "lng": "77° 13' 44.29200'' E"
+          },
+          "MGRS": "43RGM1785071664",
+          "Maidenhead": "ML88op76lv",
+          "Mercator": {
+            "x": 8597089.615,
+            "y": 3311172.42
+          },
+          "OSM": {
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.65381/77.22897&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.65381&mlon=77.22897#map=17/28.65381/77.22897"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngj2k2t3mfd88wmqvr",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431120,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "developer.confirms.different"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.7718638,
+            "lng": 77.3476629
+          },
+          "southwest": {
+            "lat": 28.5011031,
+            "lng": 76.9984371
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "city",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "county": "North Delhi",
+          "state": "National Capital Territory of Delhi",
+          "town": "Delhi"
+        },
+        "confidence": 3,
+        "formatted": "Delhi, North Delhi, India",
+        "geometry": {
+          "lat": 28.65381,
+          "lng": 77.22897
+        }
+      }
+    ],
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "stay_informed": {
+      "blog": "https://blog.opencagedata.com",
+      "mastodon": "https://en.osm.town/@opencage"
+    },
+    "thanks": "For using an OpenCage API",
+    "timestamp": {
+      "created_http": "Tue, 15 Sep 2026 19:49:26 GMT",
+      "created_unix": 1789501766
+    },
+    "total_results": 3
+  },
+  "q=Jagatpuri, Delhi|proximity=28.6139,77.209": {
+    "documentation": "https://opencagedata.com/api",
+    "licenses": [
+      {
+        "name": "see attribution guide",
+        "url": "https://opencagedata.com/credits"
+      }
+    ],
+    "rate": {
+      "limit": 2500,
+      "remaining": 2461,
+      "reset": 1789516800
+    },
+    "results": [
+      {
+        "annotations": {
+          "DIGIPIN": "39J-5F3-9JPT",
+          "DMS": {
+            "lat": "28° 38' 46.91616'' N",
+            "lng": "77° 17' 41.37036'' E"
+          },
+          "MGRS": "43RGM2430470961",
+          "Maidenhead": "ML88pp55jd",
+          "Mercator": {
+            "x": 8604420.571,
+            "y": 3310232.969
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=7138534351#map=17/28.64637/77.29483",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.64637/77.29483&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.64637&mlon=77.29483#map=17/28.64637/77.29483"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttnfyyum5vwfyqm2bhce",
+          "qibla": 266.6,
+          "roadinfo": {
+            "drive_on": "left",
+            "road": "Ved Prakash Gaur Marg",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "innovate.discouraged.outhouse"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6464156,
+            "lng": 77.2948751
+          },
+          "southwest": {
+            "lat": 28.6463156,
+            "lng": 77.2947751
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "health",
+          "_normalized_city": "Delhi",
+          "_type": "clinic",
+          "city": "Delhi",
+          "city_district": "Shahdara South",
+          "clinic": "DGD, Jagatpuri",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "postcode": "110051",
+          "road": "Ved Prakash Gaur Marg",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "East Delhi",
+          "suburb": "Preet Vihar"
+        },
+        "confidence": 9,
+        "formatted": "DGD, Jagatpuri, Ved Prakash Gaur Marg, Preet Vihar, Delhi - 110051, Delhi, India",
+        "geometry": {
+          "lat": 28.6463656,
+          "lng": 77.2948251
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-499-JF7M",
+          "DMS": {
+            "lat": "28° 39' 13.71600'' N",
+            "lng": "77° 13' 44.29200'' E"
+          },
+          "MGRS": "43RGM1785071664",
+          "Maidenhead": "ML88op76lv",
+          "Mercator": {
+            "x": 8597089.615,
+            "y": 3311172.42
+          },
+          "OSM": {
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.65381/77.22897&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.65381&mlon=77.22897#map=17/28.65381/77.22897"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngj2k2t3mfd88wmqvr",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431120,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "developer.confirms.different"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.7718638,
+            "lng": 77.3476629
+          },
+          "southwest": {
+            "lat": 28.5011031,
+            "lng": 76.9984371
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "city",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "county": "North Delhi",
+          "state": "National Capital Territory of Delhi",
+          "town": "Delhi"
+        },
+        "confidence": 3,
+        "formatted": "Delhi, North Delhi, India",
+        "geometry": {
+          "lat": 28.65381,
+          "lng": 77.22897
+        }
+      }
+    ],
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "stay_informed": {
+      "blog": "https://blog.opencagedata.com",
+      "mastodon": "https://en.osm.town/@opencage"
+    },
+    "thanks": "For using an OpenCage API",
+    "timestamp": {
+      "created_http": "Tue, 15 Sep 2026 19:49:25 GMT",
+      "created_unix": 1789501765
+    },
+    "total_results": 2
+  },
+  "q=Karkari Mod, Delhi|proximity=28.6139,77.209": {
+    "documentation": "https://opencagedata.com/api",
+    "licenses": [
+      {
+        "name": "see attribution guide",
+        "url": "https://opencagedata.com/credits"
+      }
+    ],
+    "rate": {
+      "limit": 2500,
+      "remaining": 2462,
+      "reset": 1789516800
+    },
+    "results": [
+      {
+        "annotations": {
+          "DIGIPIN": "39J-499-JF7M",
+          "DMS": {
+            "lat": "28° 39' 13.71600'' N",
+            "lng": "77° 13' 44.29200'' E"
+          },
+          "MGRS": "43RGM1785071664",
+          "Maidenhead": "ML88op76lv",
+          "Mercator": {
+            "x": 8597089.615,
+            "y": 3311172.42
+          },
+          "OSM": {
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.65381/77.22897&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.65381&mlon=77.22897#map=17/28.65381/77.22897"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngj2k2t3mfd88wmqvr",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431120,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "developer.confirms.different"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.7718638,
+            "lng": 77.3476629
+          },
+          "southwest": {
+            "lat": 28.5011031,
+            "lng": 76.9984371
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "city",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "county": "North Delhi",
+          "state": "National Capital Territory of Delhi",
+          "town": "Delhi"
+        },
+        "confidence": 3,
+        "formatted": "Delhi, North Delhi, India",
+        "geometry": {
+          "lat": 28.65381,
+          "lng": 77.22897
+        }
+      }
+    ],
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "stay_informed": {
+      "blog": "https://blog.opencagedata.com",
+      "mastodon": "https://en.osm.town/@opencage"
+    },
+    "thanks": "For using an OpenCage API",
+    "timestamp": {
+      "created_http": "Tue, 15 Sep 2026 19:49:24 GMT",
+      "created_unix": 1789501764
+    },
+    "total_results": 1
+  },
+  "q=Krishna Nagar, Delhi|proximity=28.6139,77.209": {
+    "documentation": "https://opencagedata.com/api",
+    "licenses": [
+      {
+        "name": "see attribution guide",
+        "url": "https://opencagedata.com/credits"
+      }
+    ],
+    "rate": {
+      "limit": 2500,
+      "remaining": 2464,
+      "reset": 1789516800
+    },
+    "results": [
+      {
+        "annotations": {
+          "DIGIPIN": "39J-2LM-LJF5",
+          "DMS": {
+            "lat": "28° 39' 28.12572'' N",
+            "lng": "77° 17' 24.43164'' E"
+          },
+          "MGRS": "43RGM2382072221",
+          "Maidenhead": "ML88pp47tv",
+          "Mercator": {
+            "x": 8603896.791,
+            "y": 3311677.57
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=6049373298#map=17/28.65781/77.29012",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.65781/77.29012&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.65781&mlon=77.29012#map=17/28.65781/77.29012"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngnbbzy76rxcz4b5zg",
+          "qibla": 266.58,
+          "roadinfo": {
+            "drive_on": "left",
+            "road": "Road Number 57",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "overture.admiringly.displays"
+          },
+          "wikidata": "Q28178869"
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6628127,
+            "lng": 77.2951199
+          },
+          "southwest": {
+            "lat": 28.6528127,
+            "lng": 77.2851199
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "transportation",
+          "_normalized_city": "Delhi",
+          "_type": "railway",
+          "city": "Delhi",
+          "city_district": "Shahdara South",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "neighbourhood": "Kanti Nagar Extension",
+          "postcode": "110051",
+          "railway": "Krishna Nagar",
+          "road": "Road Number 57",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "East Delhi",
+          "suburb": "Preet Vihar"
+        },
+        "confidence": 8,
+        "formatted": "Krishna Nagar, Road Number 57, Preet Vihar, Delhi - 110051, Delhi, India",
+        "geometry": {
+          "lat": 28.6578127,
+          "lng": 77.2901199
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-445-KFJM",
+          "DMS": {
+            "lat": "28° 33' 49.32612'' N",
+            "lng": "77° 11' 36.27528'' E"
+          },
+          "MGRS": "43RGM1455761613",
+          "Maidenhead": "ML88on35fg",
+          "Mercator": {
+            "x": 8593131.072,
+            "y": 3299805.673
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?relation=3893560#map=17/28.56370/77.19341",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.56370/77.19341&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.56370&mlon=77.19341#map=17/28.56370/77.19341"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttnfkxfe8gfjx47jhfdv",
+          "qibla": 266.66,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431120,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789477020,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "deleting.amber.teardrop"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.564727,
+            "lng": 77.1961682
+          },
+          "southwest": {
+            "lat": 28.5626533,
+            "lng": 77.1918305
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "neighbourhood",
+          "city": "Delhi",
+          "city_district": "South",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "South Delhi",
+          "suburb": "Krishna Nagar"
+        },
+        "confidence": 9,
+        "formatted": "Krishna Nagar, Delhi, South Delhi, India",
+        "geometry": {
+          "lat": 28.5637017,
+          "lng": 77.1934098
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-499-JF7M",
+          "DMS": {
+            "lat": "28° 39' 13.71600'' N",
+            "lng": "77° 13' 44.29200'' E"
+          },
+          "MGRS": "43RGM1785071664",
+          "Maidenhead": "ML88op76lv",
+          "Mercator": {
+            "x": 8597089.615,
+            "y": 3311172.42
+          },
+          "OSM": {
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.65381/77.22897&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.65381&mlon=77.22897#map=17/28.65381/77.22897"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngj2k2t3mfd88wmqvr",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431120,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "developer.confirms.different"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.7718638,
+            "lng": 77.3476629
+          },
+          "southwest": {
+            "lat": 28.5011031,
+            "lng": 76.9984371
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "city",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "county": "North Delhi",
+          "state": "National Capital Territory of Delhi",
+          "town": "Delhi"
+        },
+        "confidence": 3,
+        "formatted": "Delhi, North Delhi, India",
+        "geometry": {
+          "lat": 28.65381,
+          "lng": 77.22897
+        }
+      }
+    ],
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "stay_informed": {
+      "blog": "https://blog.opencagedata.com",
+      "mastodon": "https://en.osm.town/@opencage"
+    },
+    "thanks": "For using an OpenCage API",
+    "timestamp": {
+      "created_http": "Tue, 15 Sep 2026 19:48:28 GMT",
+      "created_unix": 1789501708
+    },
+    "total_results": 3
+  },
+  "q=Madhuban Chowk, Delhi|proximity=28.6139,77.209": {
+    "documentation": "https://opencagedata.com/api",
+    "licenses": [
+      {
+        "name": "see attribution guide",
+        "url": "https://opencagedata.com/credits"
+      }
+    ],
+    "rate": {
+      "limit": 2500,
+      "remaining": 2466,
+      "reset": 1789516800
+    },
+    "results": [
+      {
+        "annotations": {
+          "DIGIPIN": "39J-J66-KK7K",
+          "DMS": {
+            "lat": "28° 42' 11.76336'' N",
+            "lng": "77° 7' 56.09892'' E"
+          },
+          "MGRS": "43RGM0829776972",
+          "Maidenhead": "ML88nq58us",
+          "Mercator": {
+            "x": 8586322.76,
+            "y": 3317415.461
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=663765153#map=17/28.70327/77.13225",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.70327/77.13225&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.70327&mlon=77.13225#map=17/28.70327/77.13225"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttng71mbxsvuw70s53h4",
+          "qibla": 266.42,
+          "roadinfo": {
+            "drive_on": "left",
+            "road": "Lala Jagat Narayan marg",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431180,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789477020,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "clicker.trickle.forces"
+          },
+          "wikidata": "Q7198601"
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.7082676,
+            "lng": 77.1372497
+          },
+          "southwest": {
+            "lat": 28.6982676,
+            "lng": 77.1272497
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "transportation",
+          "_normalized_city": "Delhi",
+          "_type": "railway",
+          "city": "Delhi",
+          "city_district": "Keshavpuram",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "neighbourhood": "Kapil Vihar",
+          "postcode": "110034",
+          "railway": "Madhuban Chowk",
+          "road": "Lala Jagat Narayan marg",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "Central North Delhi",
+          "suburb": "Pitampura"
+        },
+        "confidence": 8,
+        "formatted": "Madhuban Chowk, Lala Jagat Narayan marg, Pitampura, Delhi - 110034, Delhi, India",
+        "geometry": {
+          "lat": 28.7032676,
+          "lng": 77.1322497
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-J66-L995",
+          "DMS": {
+            "lat": "28° 42' 8.25084'' N",
+            "lng": "77° 7' 59.90268'' E"
+          },
+          "MGRS": "43RGM0840276866",
+          "Maidenhead": "ML88nq58xn",
+          "Mercator": {
+            "x": 8586440.381,
+            "y": 3317292.27
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=13594808141#map=17/28.70229/77.13331",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.70229/77.13331&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.70229&mlon=77.13331#map=17/28.70229/77.13331"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttng71nfbr1b3dr20mkx",
+          "qibla": 266.43,
+          "roadinfo": {
+            "drive_on": "left",
+            "road": "30 futa road",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431180,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789477020,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "gems.tramps.fighters"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.7023419,
+            "lng": 77.1333563
+          },
+          "southwest": {
+            "lat": 28.7022419,
+            "lng": 77.1332563
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "transportation",
+          "_normalized_city": "Delhi",
+          "_type": "bus_stop",
+          "city": "Delhi",
+          "city_district": "Keshavpuram",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "highway": "Madhuban Chowk",
+          "neighbourhood": "Kapil Vihar",
+          "postcode": "110034",
+          "road": "30 futa road",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "Central North Delhi",
+          "suburb": "Pitampura"
+        },
+        "confidence": 9,
+        "formatted": "Madhuban Chowk, 30 futa road, Pitampura, Delhi - 110034, Delhi, India",
+        "geometry": {
+          "lat": 28.7022919,
+          "lng": 77.1333063
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-J65-6JTJ",
+          "DMS": {
+            "lat": "28° 42' 12.89484'' N",
+            "lng": "77° 7' 48.20052'' E"
+          },
+          "MGRS": "43RGM0808277003",
+          "Maidenhead": "ML88nq58ou",
+          "Mercator": {
+            "x": 8586078.525,
+            "y": 3317455.145
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=13628472108#map=17/28.70358/77.13006",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.70358/77.13006&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.70358&mlon=77.13006#map=17/28.70358/77.13006"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttng71k6kx3zrrh3x05u",
+          "qibla": 266.42,
+          "roadinfo": {
+            "drive_on": "left",
+            "road": "Road Number 17",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431180,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789477020,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "posts.wasp.windpipe"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.7036319,
+            "lng": 77.1301057
+          },
+          "southwest": {
+            "lat": 28.7035319,
+            "lng": 77.1300057
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "transportation",
+          "_normalized_city": "Delhi",
+          "_type": "railway",
+          "city": "Delhi",
+          "city_district": "Rohini",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "postcode": "110034",
+          "railway": "Madhuban Chowk",
+          "road": "Road Number 17",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "North West Delhi",
+          "suburb": "Rohini"
+        },
+        "confidence": 9,
+        "formatted": "Madhuban Chowk, Road Number 17, Rohini, Delhi - 110034, Delhi, India",
+        "geometry": {
+          "lat": 28.7035819,
+          "lng": 77.1300557
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-499-JF7M",
+          "DMS": {
+            "lat": "28° 39' 13.71600'' N",
+            "lng": "77° 13' 44.29200'' E"
+          },
+          "MGRS": "43RGM1785071664",
+          "Maidenhead": "ML88op76lv",
+          "Mercator": {
+            "x": 8597089.615,
+            "y": 3311172.42
+          },
+          "OSM": {
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.65381/77.22897&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.65381&mlon=77.22897#map=17/28.65381/77.22897"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngj2k2t3mfd88wmqvr",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431120,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "developer.confirms.different"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.7718638,
+            "lng": 77.3476629
+          },
+          "southwest": {
+            "lat": 28.5011031,
+            "lng": 76.9984371
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "city",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "county": "North Delhi",
+          "state": "National Capital Territory of Delhi",
+          "town": "Delhi"
+        },
+        "confidence": 3,
+        "formatted": "Delhi, North Delhi, India",
+        "geometry": {
+          "lat": 28.65381,
+          "lng": 77.22897
+        }
+      }
+    ],
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "stay_informed": {
+      "blog": "https://blog.opencagedata.com",
+      "mastodon": "https://en.osm.town/@opencage"
+    },
+    "thanks": "For using an OpenCage API",
+    "timestamp": {
+      "created_http": "Tue, 15 Sep 2026 19:48:26 GMT",
+      "created_unix": 1789501706
+    },
+    "total_results": 4
+  },
+  "q=Mehrauli, Delhi|proximity=28.6139,77.209": {
+    "documentation": "https://opencagedata.com/api",
+    "licenses": [
+      {
+        "name": "see attribution guide",
+        "url": "https://opencagedata.com/credits"
+      }
+    ],
+    "rate": {
+      "limit": 2500,
+      "remaining": 2463,
+      "reset": 1789516800
+    },
+    "results": [
+      {
+        "annotations": {
+          "DIGIPIN": "39J-4ML-3F5P",
+          "DMS": {
+            "lat": "28° 31' 18.57432'' N",
+            "lng": "77° 10' 41.96352'' E"
+          },
+          "MGRS": "43RGM1316556945",
+          "Maidenhead": "ML88om15jf",
+          "Mercator": {
+            "x": 8591451.639,
+            "y": 3294526.62
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=312921217#map=17/28.52183/77.17832",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.52183/77.17832&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.52183&mlon=77.17832#map=17/28.52183/77.17832"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttnfk0px9mbb6z9e7z7f",
+          "qibla": 266.71,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431120,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789477020,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "credited.snored.shame"
+          },
+          "wikidata": "Q2988403"
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.5418262,
+            "lng": 77.1983232
+          },
+          "southwest": {
+            "lat": 28.5018262,
+            "lng": 77.1583232
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "neighbourhood",
+          "city": "Delhi",
+          "city_district": "South",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "postcode": "110030",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "South Delhi",
+          "suburb": "Mehrauli"
+        },
+        "confidence": 7,
+        "formatted": "Mehrauli, Delhi - 110030, Delhi, India",
+        "geometry": {
+          "lat": 28.5218262,
+          "lng": 77.1783232
+        }
+      }
+    ],
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "stay_informed": {
+      "blog": "https://blog.opencagedata.com",
+      "mastodon": "https://en.osm.town/@opencage"
+    },
+    "thanks": "For using an OpenCage API",
+    "timestamp": {
+      "created_http": "Tue, 15 Sep 2026 19:48:29 GMT",
+      "created_unix": 1789501709
+    },
+    "total_results": 1
+  },
+  "q=Shahdara, Delhi|proximity=28.6139,77.209": {
+    "documentation": "https://opencagedata.com/api",
+    "licenses": [
+      {
+        "name": "see attribution guide",
+        "url": "https://opencagedata.com/credits"
+      }
+    ],
+    "rate": {
+      "limit": 2500,
+      "remaining": 2465,
+      "reset": 1789516800
+    },
+    "results": [
+      {
+        "annotations": {
+          "DIGIPIN": "39J-2LK-885T",
+          "DMS": {
+            "lat": "28° 40' 24.34728'' N",
+            "lng": "77° 17' 23.58888'' E"
+          },
+          "MGRS": "43RGM2376473951",
+          "Maidenhead": "ML88pq41so",
+          "Mercator": {
+            "x": 8603870.731,
+            "y": 3313648.674
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=663758998#map=17/28.67343/77.28989",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.67343/77.28989&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.67343&mlon=77.28989#map=17/28.67343/77.28989"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngngbfbfeznnh00qvt",
+          "qibla": 266.56,
+          "roadinfo": {
+            "drive_on": "left",
+            "road": "Makki Sarai Railway Road",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "maddening.firming.evolution"
+          },
+          "wikidata": "Q11307902"
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6784298,
+            "lng": 77.2948858
+          },
+          "southwest": {
+            "lat": 28.6684298,
+            "lng": 77.2848858
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "transportation",
+          "_normalized_city": "Delhi",
+          "_type": "railway",
+          "city": "Delhi",
+          "city_district": "Shahdara North",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "neighbourhood": "Naveen Shahdara",
+          "postcode": "110032",
+          "railway": "Shahdara",
+          "road": "Makki Sarai Railway Road",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "North East Delhi",
+          "suburb": "Shahdara"
+        },
+        "confidence": 8,
+        "formatted": "Shahdara, Makki Sarai Railway Road, Delhi - 110032, Delhi, India",
+        "geometry": {
+          "lat": 28.6734298,
+          "lng": 77.2898858
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-2L3-KJ5K",
+          "DMS": {
+            "lat": "28° 40' 38.29368'' N",
+            "lng": "77° 17' 25.24812'' E"
+          },
+          "MGRS": "43RGM2380174381",
+          "Maidenhead": "ML88pq42un",
+          "Mercator": {
+            "x": 8603922.038,
+            "y": 3314137.675
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=944841270#map=17/28.67730/77.29035",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.67730/77.29035&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.67730&mlon=77.29035#map=17/28.67730/77.29035"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngnu917sgs7xujfcg2",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "juicy.evolution.rails"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6973038,
+            "lng": 77.3103467
+          },
+          "southwest": {
+            "lat": 28.6573038,
+            "lng": 77.2703467
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "neighbourhood",
+          "city": "Delhi",
+          "city_district": "Shahdara North",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "postcode": "110032",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "North East Delhi",
+          "suburb": "Shahdara"
+        },
+        "confidence": 7,
+        "formatted": "Shahdara, Delhi - 110032, Delhi, India",
+        "geometry": {
+          "lat": 28.6773038,
+          "lng": 77.2903467
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-2L4-3LLK",
+          "DMS": {
+            "lat": "28° 40' 10.15788'' N",
+            "lng": "77° 17' 32.05464'' E"
+          },
+          "MGRS": "43RGM2400273519",
+          "Maidenhead": "ML88pq50bq",
+          "Mercator": {
+            "x": 8604132.51,
+            "y": 3313151.172
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?relation=3812951#map=17/28.66949/77.29224",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.66949/77.29224&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.66949&mlon=77.29224#map=17/28.66949/77.29224"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngng47zevrjrptf8x3",
+          "qibla": 266.56,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "sensible.pushy.motorist"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6727266,
+            "lng": 77.2962669
+          },
+          "southwest": {
+            "lat": 28.665963,
+            "lng": 77.2886056
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "neighbourhood",
+          "city": "Delhi",
+          "city_district": "Shahdara South",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "East Delhi",
+          "suburb": "Shahdara"
+        },
+        "confidence": 9,
+        "formatted": "Shahdara, Delhi, East Delhi, India",
+        "geometry": {
+          "lat": 28.6694883,
+          "lng": 77.2922374
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-2L3-P982",
+          "DMS": {
+            "lat": "28° 40' 33.51288'' N",
+            "lng": "77° 17' 45.74400'' E"
+          },
+          "MGRS": "43RGM2436074245",
+          "Maidenhead": "ML88pq52mf",
+          "Mercator": {
+            "x": 8604555.813,
+            "y": 3313970.044
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?way=1312001715#map=17/28.67598/77.29604",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.67598/77.29604&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.67598&mlon=77.29604#map=17/28.67598/77.29604"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngnum38m2fej3v6ehr",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "road": "Shahdara Flyover",
+            "road_type": "primary",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "albums.trio.owns"
+          },
+          "wikidata": "Q300701"
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6759816,
+            "lng": 77.2962345
+          },
+          "southwest": {
+            "lat": 28.6759699,
+            "lng": 77.2958455
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "road",
+          "_normalized_city": "Delhi",
+          "_type": "road",
+          "city": "Delhi",
+          "city_district": "Shahdara North",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "neighbourhood": "Jwala Nagar",
+          "postcode": "110032",
+          "road": "Shahdara Flyover",
+          "road_type": "primary",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "North East Delhi",
+          "suburb": "Shahdara"
+        },
+        "confidence": 9,
+        "formatted": "Shahdara Flyover, Shahdara, Delhi - 110032, Delhi, India",
+        "geometry": {
+          "lat": 28.6759758,
+          "lng": 77.29604
+        }
+      }
+    ],
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "stay_informed": {
+      "blog": "https://blog.opencagedata.com",
+      "mastodon": "https://en.osm.town/@opencage"
+    },
+    "thanks": "For using an OpenCage API",
+    "timestamp": {
+      "created_http": "Tue, 15 Sep 2026 19:48:27 GMT",
+      "created_unix": 1789501707
+    },
+    "total_results": 4
+  },
+  "q=Vishwas Nagar, Delhi|proximity=28.6139,77.209": {
+    "documentation": "https://opencagedata.com/api",
+    "licenses": [
+      {
+        "name": "see attribution guide",
+        "url": "https://opencagedata.com/credits"
+      }
+    ],
+    "rate": {
+      "limit": 2500,
+      "remaining": 2460,
+      "reset": 1789516800
+    },
+    "results": [
+      {
+        "annotations": {
+          "DIGIPIN": "39J-2LM-F7FC",
+          "DMS": {
+            "lat": "28° 39' 52.09236'' N",
+            "lng": "77° 17' 30.26904'' E"
+          },
+          "MGRS": "43RGM2396472961",
+          "Maidenhead": "ML88pp59al",
+          "Mercator": {
+            "x": 8604077.295,
+            "y": 3312517.794
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?relation=3812871#map=17/28.66447/77.29174",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.66447/77.29174&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.66447&mlon=77.29174#map=17/28.66447/77.29174"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngnf4nshe86rygm0rw",
+          "qibla": 266.57,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "cookery.seated.towel"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6694916,
+            "lng": 77.3016283
+          },
+          "southwest": {
+            "lat": 28.6602498,
+            "lng": 77.2847571
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "neighbourhood",
+          "city": "Delhi",
+          "city_district": "Shahdara South",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "East Delhi",
+          "suburb": "Vishwas Nagar"
+        },
+        "confidence": 8,
+        "formatted": "Vishwas Nagar, Delhi, East Delhi, India",
+        "geometry": {
+          "lat": 28.6644701,
+          "lng": 77.2917414
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-2LM-9J87",
+          "DMS": {
+            "lat": "28° 39' 51.96852'' N",
+            "lng": "77° 17' 41.85600'' E"
+          },
+          "MGRS": "43RGM2427972964",
+          "Maidenhead": "ML88pp59jl",
+          "Mercator": {
+            "x": 8604435.588,
+            "y": 3312513.452
+          },
+          "OSM": {
+            "edit_url": "https://www.openstreetmap.org/edit?node=944841537#map=17/28.66444/77.29496",
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.66444/77.29496&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.66444&mlon=77.29496#map=17/28.66444/77.29496"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngnfhqrn5e33247efr",
+          "qibla": 266.57,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514160,
+              "civil": 1789431120,
+              "nautical": 1789515840
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481700,
+              "civil": 1789478400,
+              "nautical": 1789480020
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "shifters.scribble.factor"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.6744357,
+            "lng": 77.30496
+          },
+          "southwest": {
+            "lat": 28.6544357,
+            "lng": 77.28496
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "ISO_3166-2": [
+            "IN-DL"
+          ],
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "neighbourhood",
+          "city": "Delhi",
+          "city_district": "Shahdara South",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "neighbourhood": "Vishwas Nagar",
+          "postcode": "110051",
+          "state": "Delhi",
+          "state_code": "DL",
+          "state_district": "East Delhi",
+          "suburb": "Vishwas Nagar"
+        },
+        "confidence": 7,
+        "formatted": "Vishwas Nagar, Delhi - 110051, Delhi, India",
+        "geometry": {
+          "lat": 28.6644357,
+          "lng": 77.29496
+        }
+      },
+      {
+        "annotations": {
+          "DIGIPIN": "39J-499-JF7M",
+          "DMS": {
+            "lat": "28° 39' 13.71600'' N",
+            "lng": "77° 13' 44.29200'' E"
+          },
+          "MGRS": "43RGM1785071664",
+          "Maidenhead": "ML88op76lv",
+          "Mercator": {
+            "x": 8597089.615,
+            "y": 3311172.42
+          },
+          "OSM": {
+            "note_url": "https://www.openstreetmap.org/note/new#map=17/28.65381/77.22897&layers=N",
+            "url": "https://www.openstreetmap.org/?mlat=28.65381&mlon=77.22897#map=17/28.65381/77.22897"
+          },
+          "UN_M49": {
+            "regions": {
+              "ASIA": "142",
+              "IN": "356",
+              "SOUTHERN_ASIA": "034",
+              "WORLD": "001"
+            },
+            "statistical_groupings": [
+              "LEDC"
+            ]
+          },
+          "callingcode": 91,
+          "currency": {
+            "alternate_symbols": [
+              "Rs",
+              "৳",
+              "૱",
+              "௹",
+              "रु",
+              "₨"
+            ],
+            "decimal_mark": ".",
+            "html_entity": "&#x20b9;",
+            "iso_code": "INR",
+            "iso_numeric": "356",
+            "name": "Indian Rupee",
+            "smallest_denomination": 50,
+            "subunit": "Paisa",
+            "subunit_to_unit": 100,
+            "symbol": "₹",
+            "symbol_first": 1,
+            "thousands_separator": ","
+          },
+          "flag": "🇮🇳",
+          "geohash": "ttngj2k2t3mfd88wmqvr",
+          "qibla": 266.55,
+          "roadinfo": {
+            "drive_on": "left",
+            "speed_in": "km/h"
+          },
+          "sun": {
+            "rise": {
+              "apparent": 1789432560,
+              "astronomical": 1789514220,
+              "civil": 1789431120,
+              "nautical": 1789515900
+            },
+            "set": {
+              "apparent": 1789476960,
+              "astronomical": 1789481760,
+              "civil": 1789478400,
+              "nautical": 1789480080
+            }
+          },
+          "timezone": {
+            "name": "Asia/Kolkata",
+            "now_in_dst": 0,
+            "offset_sec": 19800,
+            "offset_string": "+0530",
+            "short_name": "IST"
+          },
+          "what3words": {
+            "words": "developer.confirms.different"
+          }
+        },
+        "bounds": {
+          "northeast": {
+            "lat": 28.7718638,
+            "lng": 77.3476629
+          },
+          "southwest": {
+            "lat": 28.5011031,
+            "lng": 76.9984371
+          }
+        },
+        "components": {
+          "ISO_3166-1_alpha-2": "IN",
+          "ISO_3166-1_alpha-3": "IND",
+          "_category": "place",
+          "_normalized_city": "Delhi",
+          "_type": "city",
+          "continent": "Asia",
+          "country": "India",
+          "country_code": "in",
+          "county": "North Delhi",
+          "state": "National Capital Territory of Delhi",
+          "town": "Delhi"
+        },
+        "confidence": 3,
+        "formatted": "Delhi, North Delhi, India",
+        "geometry": {
+          "lat": 28.65381,
+          "lng": 77.22897
+        }
+      }
+    ],
+    "status": {
+      "code": 200,
+      "message": "OK"
+    },
+    "stay_informed": {
+      "blog": "https://blog.opencagedata.com",
+      "mastodon": "https://en.osm.town/@opencage"
+    },
+    "thanks": "For using an OpenCage API",
+    "timestamp": {
+      "created_http": "Tue, 15 Sep 2026 19:49:25 GMT",
+      "created_unix": 1789501765
+    },
+    "total_results": 3
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "case_1_madhuban_chowk": {
+    "confidence": "CONFIDENCE_HIGH",
+    "chosen": {
+      "formatted": "Madhuban Chowk, 30 futa road, Pitampura, Delhi - 110034, Delhi, India",
+      "lat": 28.7022919,
+      "lng": 77.1333063,
+      "opencage_confidence": 9
+    },
+    "candidates": [
+      {
+        "formatted": "Madhuban Chowk, Lala Jagat Narayan marg, Pitampura, Delhi - 110034, Delhi, India",
+        "lat": 28.7032676,
+        "lng": 77.1322497,
+        "opencage_confidence": 8
+      },
+      {
+        "formatted": "Madhuban Chowk, 30 futa road, Pitampura, Delhi - 110034, Delhi, India",
+        "lat": 28.7022919,
+        "lng": 77.1333063,
+        "opencage_confidence": 9
+      },
+      {
+        "formatted": "Madhuban Chowk, Road Number 17, Rohini, Delhi - 110034, Delhi, India",
+        "lat": 28.7035819,
+        "lng": 77.1300557,
+        "opencage_confidence": 9
+      }
+    ],
+    "spread_m": 348.0,
+    "method": "CLUSTERED",
+    "reason": "3 candidate(s) cluster within 348 m (<= 500 m) -- treated as one real place."
+  },
+  "case_2a_shahdara_anchor_rejected": {
+    "confidence": "CONFIDENCE_LOW",
+    "chosen": {
+      "formatted": "Shahdara, Delhi, East Delhi, India",
+      "lat": 28.6694883,
+      "lng": 77.2922374,
+      "opencage_confidence": 9
+    },
+    "candidates": [
+      {
+        "formatted": "Shahdara, Makki Sarai Railway Road, Delhi - 110032, Delhi, India",
+        "lat": 28.6734298,
+        "lng": 77.2898858,
+        "opencage_confidence": 8
+      },
+      {
+        "formatted": "Shahdara, Delhi - 110032, Delhi, India",
+        "lat": 28.6773038,
+        "lng": 77.2903467,
+        "opencage_confidence": 7
+      },
+      {
+        "formatted": "Shahdara, Delhi, East Delhi, India",
+        "lat": 28.6694883,
+        "lng": 77.2922374,
+        "opencage_confidence": 9
+      },
+      {
+        "formatted": "Shahdara Flyover, Shahdara, Delhi - 110032, Delhi, India",
+        "lat": 28.6759758,
+        "lng": 77.29604,
+        "opencage_confidence": 9
+      }
+    ],
+    "spread_m": 888.4,
+    "method": "BEST_GUESS_AMBIGUOUS",
+    "reason": "4 candidates spread 888 m (> 500 m) -- genuine ambiguity, and no other confidently-resolved mention in this tweet to disambiguate against. Highest-OpenCage-confidence candidate kept as a best guess; all candidates retained rather than one being silently treated as certain."
+  },
+  "case_2b_krishna_nagar_with_valid_anchor": {
+    "confidence": "CONFIDENCE_MEDIUM",
+    "chosen": {
+      "formatted": "Krishna Nagar, Road Number 57, Preet Vihar, Delhi - 110051, Delhi, India",
+      "lat": 28.6578127,
+      "lng": 77.2901199,
+      "opencage_confidence": 8
+    },
+    "candidates": [
+      {
+        "formatted": "Krishna Nagar, Road Number 57, Preet Vihar, Delhi - 110051, Delhi, India",
+        "lat": 28.6578127,
+        "lng": 77.2901199,
+        "opencage_confidence": 8
+      },
+      {
+        "formatted": "Krishna Nagar, Delhi, South Delhi, India",
+        "lat": 28.5637017,
+        "lng": 77.1934098,
+        "opencage_confidence": 9
+      }
+    ],
+    "spread_m": 14093.7,
+    "method": "JOINT_DISAMBIGUATION",
+    "reason": "2 candidates spread 14094 m (> 500 m) -- genuine ambiguity. Resolved via proximity to another already-confident mention in the same tweet (1353 m away).",
+    "anchor": {
+      "confidence": "CONFIDENCE_HIGH",
+      "chosen": {
+        "formatted": "DGD, Jagatpuri, Ved Prakash Gaur Marg, Preet Vihar, Delhi - 110051, Delhi, India",
+        "lat": 28.6463656,
+        "lng": 77.2948251,
+        "opencage_confidence": 9
+      },
+      "candidates": [
+        {
+          "formatted": "DGD, Jagatpuri, Ved Prakash Gaur Marg, Preet Vihar, Delhi - 110051, Delhi, India",
+          "lat": 28.6463656,
+          "lng": 77.2948251,
+          "opencage_confidence": 9
+        }
+      ],
+      "spread_m": 0.0,
+      "method": "CLUSTERED",
+      "reason": "1 candidate(s) cluster within 0 m (<= 500 m) -- treated as one real place."
+    }
+  },
+  "case_3_krishna_nagar_no_anchor": {
+    "confidence": "CONFIDENCE_LOW",
+    "chosen": {
+      "formatted": "Krishna Nagar, Delhi, South Delhi, India",
+      "lat": 28.5637017,
+      "lng": 77.1934098,
+      "opencage_confidence": 9
+    },
+    "candidates": [
+      {
+        "formatted": "Krishna Nagar, Road Number 57, Preet Vihar, Delhi - 110051, Delhi, India",
+        "lat": 28.6578127,
+        "lng": 77.2901199,
+        "opencage_confidence": 8
+      },
+      {
+        "formatted": "Krishna Nagar, Delhi, South Delhi, India",
+        "lat": 28.5637017,
+        "lng": 77.1934098,
+        "opencage_confidence": 9
+      }
+    ],
+    "spread_m": 14093.7,
+    "method": "BEST_GUESS_AMBIGUOUS",
+    "reason": "2 candidates spread 14094 m (> 500 m) -- genuine ambiguity, and no other confidently-resolved mention in this tweet to disambiguate against. Highest-OpenCage-confidence candidate kept as a best guess; all candidates retained rather than one being silently treated as certain."
+  },
+  "case_4_fuzzy_cap": {
+    "confidence": "CONFIDENCE_MEDIUM",
+    "chosen": {
+      "formatted": "Mehrauli, Delhi - 110030, Delhi, India",
+      "lat": 28.5218262,
+      "lng": 77.1783232,
+      "opencage_confidence": 7
+    },
+    "candidates": [
+      {
+        "formatted": "Mehrauli, Delhi - 110030, Delhi, India",
+        "lat": 28.5218262,
+        "lng": 77.1783232,
+        "opencage_confidence": 7
+      }
+    ],
+    "spread_m": 0.0,
+    "method": "CLUSTERED",
+    "reason": "1 candidate(s) cluster within 0 m (<= 500 m) -- treated as one real place."
+  }
+}

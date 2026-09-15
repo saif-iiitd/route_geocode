@@ -222,7 +222,81 @@ findings rather than silently patched:
   candidate — geographically plausible (both areas are near Dwarka in
   southwest Delhi) but currently undetected as a potential collision.
 
-## S7. Improvements over the notebook baseline
+## S7. Unified candidate confidence scoring and joint disambiguation
+
+The code-fidelity audit (`docs/code_manuscript_review_audit.md`) names this
+gap directly, in terms that distinguish it from a separate, larger one:
+
+> "There is no local confidence/context ranking, no joint entity resolution,
+> no low-confidence trigger, and no saved candidate list. The code relies on
+> whatever order OpenCage returns, then uses the first coordinate passing the
+> local region test." (line 120, echoing row 5, marked **CRITICAL**: "Retain
+> alternatives and candidate metadata; evaluate context/feature-type/role
+> compatibility and deterministic selection against annotated identities.")
+
+`src/confidence.rank_candidates` addresses this for a single resolved
+mention. Two live OpenCage tests, run before any code was written, motivated
+the design: `"Madhuban Chowk, Delhi"` returns 3 candidates all within 348 m
+of each other (the same real intersection, described via different nearby
+roads — not genuine ambiguity), while `"Krishna Nagar, Delhi"` returns 2
+candidates 14,094 m apart, both at confidence 8-9 (two real, different
+places sharing a name). A single confidence number cannot represent both
+cases honestly, so the design instead measures the **spread** between a
+mention's real candidates (after dropping OpenCage's generic city-level
+fallback, consistently observed at confidence <= 3-4) and branches:
+
+| Spread | Anchor available? | Result |
+| --- | --- | --- |
+| <= 500 m | — | `CONFIDENCE_HIGH`: treated as one real place |
+| > 500 m | Yes (another mention in the same tweet already at `CONFIDENCE_HIGH`) | `CONFIDENCE_MEDIUM`, candidate nearest the anchor chosen |
+| > 500 m | No | `CONFIDENCE_LOW`, best-OpenCage-confidence candidate kept as a guess, **all real candidates retained**, none discarded |
+| No real candidates | — | `UNRESOLVED_NO_GEOCODE` |
+
+A `FUZZY`-tier gazetteer match (S4.2) is capped at `CONFIDENCE_MEDIUM` even
+on a tightly clustered geocode result, since the mention text itself was
+inferred rather than exact.
+
+**Joint disambiguation was verified against a real, independently-checkable
+case**, not merely asserted to work: from the tweet *"Traffic is heavy...
+from Krishna Nagar towards Jagatpuri due to ongoing PWD work,"* `"Jagatpuri"`
+resolves cleanly (`CONFIDENCE_HIGH`, one candidate) and independently names
+`"Preet Vihar"` in its own address. Using it as an anchor, `"Krishna Nagar"`
+(otherwise ambiguous between two real Delhi locations 14 km apart) correctly
+resolves to the East Delhi candidate also naming `"Preet Vihar"` — confirmed
+by string match against both independently-returned addresses, not built
+into the test by construction.
+
+A related real case was tested and correctly **rejected** rather than forced
+through: `"Shahdara"` (from a different real tweet mentioning Krishna Nagar)
+was tried as a candidate anchor, but its own 4 candidates span 888 m — just
+over the 500 m cluster threshold — so per the design's own rule (an anchor
+must itself be `CONFIDENCE_HIGH`) it was correctly refused as an anchor
+rather than used anyway.
+
+### S7.1 Relationship to per-route confidence (explicitly out of scope)
+
+The same audit distinguishes this work from a separate, larger requirement:
+
+> "M P144 correctly says per-route confidence is absent, contradicting
+> Appendix output claims... Appendix A nevertheless promises stored
+> confidence and a `compute_confidence` function that does not exist."
+
+**Per-route confidence — one score summarizing an entire constructed route,
+with an explicit "no feasible route" state — is not built here**, and
+deliberately so: it depends on road resolution and route construction (steps
+5-6 of the revision order), which do not exist yet in this rebuilt pipeline.
+Building a route-level score now would require stubbing those stages, which
+risks recreating exactly the "manuscript claims behavior the frozen code
+does not implement" problem this revision effort exists to fix. What this
+section does provide toward that future requirement: every mention's
+confidence result already carries an explicit, closed-vocabulary tier rather
+than a bare accept/reject — the input a future route-level rollup (e.g., a
+route's confidence bounded by its weakest-resolved constituent mention, and
+an explicit no-route state triggered by any unresolved required mention)
+will need, without requiring this layer to be reworked when that stage is
+built.
+
+## S8. Improvements over the notebook baseline
 
 | Notebook baseline | This work |
 | --- | --- |
@@ -231,8 +305,9 @@ findings rather than silently patched:
 | No joint disambiguation across co-mentioned places | Generic/ambiguous mentions resolved using an adjacent already-resolved mention as a geocoding anchor |
 | Weak alias handling, no spelling/spacing normalization | Two-stage normalized + fuzzy alias matching, with thresholds set from real, inspected data rather than defaults, and a specific false-positive risk (word-order-tolerant scoring) tested and explicitly rejected |
 | No record of *why* a place was or wasn't resolved | Every classification carries a `reason`, `match_method`, and (where applicable) a `fuzzy_score` — never a bare accept/reject |
+| No candidate confidence, no retained alternatives, no low-confidence trigger (audit row 5, CRITICAL) | `rank_candidates` retains every real candidate, assigns a closed-vocabulary confidence tier, and distinguishes genuine ambiguity (wide candidate spread) from address-variant noise (tight cluster) using thresholds set from live-tested real cases |
 
-## S8. Validation
+## S9. Validation
 
 `tests/test_entity_resolution.py`: **16 tests**, all using real corpus
 mentions found by the audits above as fixtures — exact match, case
@@ -250,9 +325,17 @@ corroboration against the real `"Dwarka Flyover"` node, and explicit checks
 that the absence of corroboration returns `None` rather than raising or
 fabricating a match.
 
-Full project test suite: **66/66 passing** as of 2026-09-16.
+`tests/test_confidence.py`: **9 tests**, no live API calls (a fake cache
+pre-populated with real recorded OpenCage responses) — tight-cluster high
+confidence, fallback-candidate exclusion, wide-spread-no-anchor stays low
+confidence with every candidate kept, wide-spread-with-valid-anchor resolves
+to medium confidence and picks the geographically correct real candidate,
+unresolved-not-an-error for no/empty candidates, the fuzzy-match confidence
+cap, and confirmation that a normalized match is not capped.
 
-## S9. Known limitations (explicit, not fixed this round)
+Full project test suite: **75/75 passing** as of 2026-09-16.
+
+## S10. Known limitations (explicit, not fixed this round)
 
 - **Free-standing generic mentions** (no adjacent already-resolved qualifier)
   are not handled — none occurred in the audited 150-record sample, so the
@@ -274,25 +357,38 @@ Full project test suite: **66/66 passing** as of 2026-09-16.
 - **OpenCage's free tier (2,500 requests/day)** has not been budgeted against
   a full-corpus run; this session's experiments used only a few dozen cached
   calls.
+- **Confidence scoring's max-pairwise-spread metric is sensitive to a single
+  outlier candidate** (S7's Shahdara case: 888 m, just over the 500 m
+  threshold, mostly the same locality with one outlier pair) — a more robust
+  metric (e.g., distance-to-centroid) might handle this better but is
+  untested.
+- **Per-route confidence and an explicit no-feasible-route state are not
+  built** (S7.1) — they depend on road resolution and route construction
+  (steps 5-6), which do not exist yet in this rebuilt pipeline.
 
-## S10. Reviewer-response link
+## S11. Reviewer-response link
 
 Addresses R1.4 (entity/location resolution fidelity), R2.3 (candidate
 ranking / no joint disambiguation), and R2.4 (alias handling) from the
-reviewer priorities list.
+reviewer priorities list, and directly closes code-fidelity-audit row 5
+(CRITICAL). Row 24 (per-route confidence/provenance export) remains open,
+tracked as a dependency on steps 5-7 of the revision order (S7.1).
 
-## S11. Reproducibility
+## S12. Reproducibility
 
 ```powershell
-python -B -m unittest tests.test_entity_resolution tests.test_geocoding -v
+python -B -m unittest tests.test_entity_resolution tests.test_geocoding tests.test_confidence -v
 python -B experiments/03_entity_resolution_audit.py
 python -B experiments/04_generic_mention_candidate_resolution.py   # uses the committed OpenCage cache; a live key is needed only on a cache miss
 python -B experiments/05_fuzzy_alias_matching.py
+python -B experiments/06_candidate_confidence_ranking.py           # ditto
 ```
 
-Source: `src/entity_resolution.py`, `src/geocoding.py`. Tests:
-`tests/test_entity_resolution.py`, `tests/test_geocoding.py`. Experiment
+Source: `src/entity_resolution.py`, `src/geocoding.py`, `src/confidence.py`.
+Tests: `tests/test_entity_resolution.py`, `tests/test_geocoding.py`,
+`tests/test_confidence.py`. Experiment
 notes with full audit detail: `experiments/02_entity_dependency_audit.md`,
 `experiments/03_entity_resolution_audit.md`,
 `experiments/04_generic_mention_candidate_resolution.md`,
-`experiments/05_fuzzy_alias_matching.md`.
+`experiments/05_fuzzy_alias_matching.md`,
+`experiments/06_candidate_confidence_ranking.md`.
